@@ -1,4 +1,4 @@
-````md
+
 # 🌌 GalaxyVerse – Interactive Space Exploration Platform
 
 <div align="center">
@@ -542,4 +542,4 @@ Licensed under the MIT License
 ⭐ Thank you for visiting GalaxyVerse ⭐
 
 </div>
-```
+
