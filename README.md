@@ -1,30 +1,16 @@
-
 # 🌌 GalaxyVerse – Interactive Space Exploration Platform
 
 <div align="center">
 
 # 🚀 GalaxyVerse
 
-### Explore • Learn • Discover The Universe
+### Explore The Universe Through Interactive Astronomy
 
-A premium NASA-inspired interactive astronomy platform built with HTML5, CSS3, JavaScript, and JSON.
+A premium NASA-inspired space exploration platform built using HTML5, CSS3, JavaScript, and JSON.
 
-Explore galaxies, planets, black holes, constellations, cosmic history, and breathtaking deep-space imagery through immersive educational experiences.
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/Deployment-GitHub%20Pages-blue?style=for-the-badge)
+Explore galaxies, planets, black holes, constellations, cosmic history, and breathtaking space imagery through immersive educational experiences.
 
 </div>
-
----
-
-# 🌍 Live Demo
-
-Deploy using GitHub Pages:
-
-https://sivamaniganjerupalli.github.io/galaxy-simulation/
 
 ---
 
@@ -39,19 +25,18 @@ https://sivamaniganjerupalli.github.io/galaxy-simulation/
 - Usage
 - Gallery Categories
 - Responsive Design
-- Performance Optimizations
 - Future Roadmap
+- Performance Optimizations
 - Developer
-- Contributing
 - License
 
 ---
 
 # 🌠 Overview
 
-GalaxyVerse is a modern NASA-inspired interactive space exploration platform designed to make astronomy educational, engaging, and visually immersive.
+GalaxyVerse is a modern NASA-inspired interactive space exploration platform designed to make astronomy engaging, educational, and visually immersive.
 
-Users can explore:
+The platform allows users to explore:
 
 - 🌌 Galaxies
 - 🪐 Solar System
@@ -60,15 +45,14 @@ Users can explore:
 - ⏳ Cosmic Timeline
 - 📸 Space Gallery
 
-Built entirely using modern frontend technologies, GalaxyVerse demonstrates:
+Built entirely using HTML5, CSS3, JavaScript, and JSON, GalaxyVerse demonstrates advanced frontend development concepts including:
 
-- Glassmorphism UI Design
-- Dynamic Starfield Effects
-- Interactive Astronomy Modules
-- Responsive Web Design
-- Modern Animations
+- Glassmorphism UI
+- Dynamic Starfields
+- Interactive Animations
+- Responsive Design
+- Modern Visual Effects
 - Educational Space Content
-- Modular Project Architecture
 
 ---
 
@@ -76,17 +60,17 @@ Built entirely using modern frontend technologies, GalaxyVerse demonstrates:
 
 ## 🌌 Galaxy Explorer
 
-- Interactive galaxy showcase
+- Interactive galaxy database
 - Detailed galaxy information
-- Beautiful galaxy imagery
-- Educational astronomy content
+- Beautiful galaxy showcase
+- NASA-inspired interface
 
 ## 🪐 Solar System Explorer
 
-- Explore major planets
+- Explore all major planets
+- Planet statistics and facts
 - Interactive observatory experience
-- Planet facts and statistics
-- Responsive planetary cards
+- Planet comparison system
 
 ## 🕳 Black Hole Laboratory
 
@@ -100,28 +84,28 @@ Built entirely using modern frontend technologies, GalaxyVerse demonstrates:
 - Famous constellations
 - Mythology and astronomy
 - Interactive constellation cards
-- Dynamic starfield background
+- Dynamic star backgrounds
 
 ## ⏳ Cosmic Timeline
 
-- Big Bang to modern exploration
+- History of the universe
+- Big Bang to future exploration
 - Interactive timeline cards
-- Modal-based information system
-- Educational universe history
+- Detailed modal information system
 
 ## 📸 Space Gallery
 
-- Curated space imagery
-- Category filtering
+- 50+ curated space images
 - Search functionality
-- Full-screen viewer
+- Category filtering
+- Full-screen image viewer
 - Deep space archive
 
 ## ℹ️ About GalaxyVerse
 
 - Mission statement
-- Project information
-- Technology details
+- Technology information
+- Future roadmap
 - Developer profile
 
 ---
@@ -149,7 +133,7 @@ Built entirely using modern frontend technologies, GalaxyVerse demonstrates:
 - CSS3
 - Vanilla JavaScript
 
-## Data Storage
+## Data Management
 
 - JSON
 
@@ -161,64 +145,107 @@ Built entirely using modern frontend technologies, GalaxyVerse demonstrates:
 
 - Glassmorphism
 - Gradient Effects
-- Space-Themed UI
-- NASA Inspired Design
-- Responsive Layouts
+- Responsive Design
+- NASA Inspired UI
+- Modern Space Theme
 
 ---
 
 # 📂 Project Structure
 
-```text
 GalaxyVerse
-│
+
 ├── index.html
+
 ├── README.md
+
 │
+
 ├── assets
+
 │   └── images
+
 │
+
 ├── css
+
 │   ├── variables.css
+
 │   ├── navbar.css
+
 │   ├── main.css
+
 │   ├── hero.css
+
 │   ├── galaxy.css
+
 │   ├── planets.css
+
 │   ├── blackhole.css
+
 │   ├── constellations.css
+
 │   ├── timeline.css
+
 │   ├── gallery.css
+
 │   ├── about.css
+
 │   └── responsive.css
+
 │
+
 ├── data
+
 │   ├── galaxies.json
+
 │   ├── planets.json
+
 │   ├── blackholes.json
+
 │   ├── constellations.json
+
 │   ├── timeline.json
+
 │   └── gallery.json
+
 │
+
 ├── js
+
 │   ├── main.js
+
 │   ├── galaxy.js
+
 │   ├── planets.js
+
 │   ├── blackhole.js
+
 │   ├── constellations.js
+
 │   ├── timeline.js
+
 │   ├── gallery.js
+
 │   └── about.js
+
 │
+
 └── pages
+
     ├── galaxy.html
+
     ├── solar-system.html
+
     ├── black-hole.html
+
     ├── constellations.html
+
     ├── timeline.html
+
     ├── gallery.html
+
     └── about.html
-````
 
 ---
 
@@ -226,68 +253,72 @@ GalaxyVerse
 
 ## Clone Repository
 
-```bash
-git clone https://github.com/sivamaniganjerupalli/galaxy-simulation.git
-```
+git clone https://github.com/sivamaniganjerupalli/galaxysimulation.git
 
 ## Navigate To Project
 
-```bash
-cd galaxy-simulation
-```
+cd galaxyverse
 
 ## Run Project
 
 Open:
 
-```text
 index.html
-```
 
-or use:
+in your browser
 
-```text
-VS Code Live Server
-```
+OR
 
----
+Use VS Code Live Server.
 
 # 🚀 Usage
 
 ### Explore Galaxies
 
-Navigate to Galaxy Explorer
+Navigate to:
+
+Galaxy Explorer
 
 ### Explore Planets
 
-Navigate to Solar System Explorer
+Navigate to:
+
+Solar System Explorer
 
 ### Study Black Holes
 
-Navigate to Black Hole Laboratory
+Navigate to:
+
+Black Hole Laboratory
 
 ### Explore Constellations
 
-Navigate to Constellation Atlas
+Navigate to:
+
+Constellation Atlas
 
 ### Travel Through Time
 
-Navigate to Cosmic Timeline
+Navigate to:
+
+Cosmic Timeline
 
 ### Browse Space Images
 
-Navigate to Space Gallery
+Navigate to:
+
+Space Gallery
 
 ---
 
 # 📸 Gallery Categories
 
-* Galaxies
-* Planets
-* Black Holes
-* Constellations
-* Space Exploration
-* Deep Space
+- Galaxies
+- Planets
+- Black Holes
+- Constellations
+- Space Exploration
+- Deep Space
 
 ---
 
@@ -295,32 +326,32 @@ Navigate to Space Gallery
 
 GalaxyVerse is optimized for:
 
-* Desktop
-* Laptop
-* Tablet
-* Mobile Devices
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
 
 Supported Breakpoints:
 
-* 320px
-* 375px
-* 425px
-* 768px
-* 1024px
-* 1440px
-* 1920px
+- 320px
+- 375px
+- 425px
+- 768px
+- 1024px
+- 1440px
+- 1920px
 
 ---
 
 # ⚡ Performance Optimizations
 
-* Optimized CSS animations
-* Lightweight JavaScript
-* Modular architecture
-* Efficient rendering
-* Smooth scrolling
-* Responsive layouts
-* Optimized image assets
+- Optimized CSS animations
+- Efficient starfield rendering
+- Lightweight Vanilla JavaScript
+- Modular architecture
+- Responsive layouts
+- Smooth scrolling effects
+- Lazy-loaded images
 
 ---
 
@@ -328,42 +359,42 @@ Supported Breakpoints:
 
 ## Phase 1
 
-* Enhanced Solar System Visualization
+- Enhanced Solar System Visualizations
 
 ## Phase 2
 
-* NASA API Integration
+- NASA API Integration
 
 ## Phase 3
 
-* Live Mission Tracking
+- Live Space Mission Tracking
 
 ## Phase 4
 
-* Exoplanet Explorer
+- Exoplanet Explorer
 
 ## Phase 5
 
-* Deep Space Observatory
+- Deep Space Observatory
 
 ## Phase 6
 
-* Space Weather Monitoring
+- Space Weather Monitoring
 
 ## Phase 7
 
-* 3D WebGL Universe Simulation
+- 3D WebGL Universe Simulation
 
 ---
 
 # 🌟 Highlights
 
-* NASA Inspired Design
-* Interactive Learning Experience
-* Premium Modern UI
-* Educational Astronomy Platform
-* Fully Responsive Design
-* Advanced Frontend Architecture
+- NASA Inspired Design
+- Interactive Learning Platform
+- Premium User Interface
+- Modern Frontend Architecture
+- Educational Astronomy Content
+- Fully Responsive Experience
 
 ---
 
@@ -377,13 +408,13 @@ Passionate about building immersive educational experiences inspired by astronom
 
 ### Skills
 
-* HTML5
-* CSS3
-* JavaScript
-* Responsive Design
-* UI/UX Design
-* Frontend Development
-* Git & GitHub
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design
+- UI/UX Design
+- Frontend Development
+- Git & GitHub
 
 ---
 
@@ -391,26 +422,21 @@ Passionate about building immersive educational experiences inspired by astronom
 
 Contributions, issues, and feature requests are welcome.
 
+If you would like to improve GalaxyVerse:
+
 1. Fork the repository
 2. Create a feature branch
+3. Commit your changes
+4. Push your branch
+5. Open a Pull Request
+
+Example:
 
 ```bash
 git checkout -b feature/new-module
-```
-
-3. Commit your changes
-
-```bash
 git commit -m "Added new space module"
-```
-
-4. Push your branch
-
-```bash
 git push origin feature/new-module
-```
 
-5. Open a Pull Request
 
 ---
 
@@ -418,7 +444,7 @@ git push origin feature/new-module
 
 This project is intended for educational, learning, research, and portfolio purposes.
 
-Please report bugs or vulnerabilities responsibly through GitHub Issues.
+If you discover any bugs, vulnerabilities, or issues, please report them responsibly through GitHub Issues or contact the project maintainer.
 
 ---
 
@@ -428,9 +454,28 @@ MIT License
 
 Copyright (c) 2026 Ganjerupalli Giri Sai Siva Manikanta
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+- Use
+- Copy
+- Modify
+- Merge
+- Publish
+- Distribute
+- Sublicense
+- Sell copies of the Software
+
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF:
+
+- MERCHANTABILITY
+- FITNESS FOR A PARTICULAR PURPOSE
+- NON-INFRINGEMENT
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
@@ -438,61 +483,65 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 GalaxyVerse was developed as:
 
-* Educational Astronomy Platform
-* Frontend Development Project
-* UI/UX Design Showcase
-* Portfolio Project
-* Modern Web Technologies Demonstration
-* Interactive Learning Experience
+- An Educational Astronomy Platform
+- A Frontend Development Project
+- A UI/UX Design Showcase
+- A Portfolio Project
+- A Modern Web Technologies Demonstration
+- A NASA-Inspired Interactive Learning Experience
 
 ---
 
 # 🌍 Browser Support
 
-* Google Chrome
-* Microsoft Edge
-* Mozilla Firefox
-* Brave Browser
-* Opera
+GalaxyVerse is tested and optimized for:
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Brave Browser
+- Opera
 
 Recommended Browser:
 
-* Google Chrome (Latest Version)
+- Google Chrome (Latest Version)
 
 ---
 
 # 🚀 Deployment
 
-Deploy using:
+This project can be deployed using:
 
-* GitHub Pages
-* Netlify
-* Vercel
-* Firebase Hosting
+- GitHub Pages
+- Netlify
+- Vercel
+- Firebase Hosting
 
-Recommended Platform:
+Recommended Deployment Platform:
 
-* GitHub Pages
+- GitHub Pages
 
 ---
 
 # 📈 Project Status
 
-## Current Version
+Current Version:
 
+```text
 GalaxyVerse v2.0
+````
 
-## Status
+Status:
 
-✅ Active Development
+```text
+Active Development
+```
 
-## Deployment
+Completion:
 
-✅ GitHub Pages Ready
-
-## Completion
-
-✅ 95% Complete
+```text
+95% Complete
+```
 
 ---
 
@@ -501,11 +550,12 @@ GalaxyVerse v2.0
 Inspired by:
 
 * NASA
-* ESA
+* ESA (European Space Agency)
 * Hubble Space Telescope
 * James Webb Space Telescope
+* Modern Space Visualization Platforms
 * Astronomy Education Initiatives
-* Space Exploration Missions
+* Scientific Discovery & Space Exploration
 
 ---
 
@@ -517,7 +567,9 @@ If you found GalaxyVerse useful:
 * 🔄 Share the Project
 * 🍴 Fork and Contribute
 * 💬 Provide Feedback
-* 🚀 Suggest Features
+* 🚀 Suggest New Features
+
+Every contribution helps improve GalaxyVerse and makes astronomy more accessible to everyone.
 
 ---
 
@@ -535,7 +587,7 @@ Built with ❤️ using HTML5, CSS3 & JavaScript
 
 © 2026 Ganjerupalli Giri Sai Siva Manikanta
 
-Licensed under the MIT License
+All Rights Reserved
 
 ---
 
