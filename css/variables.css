@@ -1,0 +1,195 @@
+:root {
+
+  /* ==========================================
+     COLORS
+  ========================================== */
+
+  --bg-primary: #02040a;
+  --bg-secondary: #050816;
+  --bg-tertiary: #0b1120;
+  --bg-glass: rgba(255,255,255,0.05);
+
+  --primary: #38bdf8;
+  --primary-dark: #0ea5e9;
+
+  --secondary: #8b5cf6;
+  --secondary-dark: #7c3aed;
+
+  --accent: #22d3ee;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --border: rgba(255,255,255,0.10);
+  --border-light: rgba(255,255,255,0.06);
+  --border-hover: rgba(56,189,248,0.35);
+
+  /* ==========================================
+     COSMIC GLOWS
+  ========================================== */
+
+  --glow-blue:
+    0 0 20px rgba(56,189,248,0.35),
+    0 0 60px rgba(56,189,248,0.20),
+    0 0 120px rgba(56,189,248,0.10);
+
+  --glow-purple:
+    0 0 20px rgba(139,92,246,0.35),
+    0 0 60px rgba(139,92,246,0.20),
+    0 0 120px rgba(139,92,246,0.10);
+
+  --glow-cyan:
+    0 0 20px rgba(34,211,238,0.35),
+    0 0 60px rgba(34,211,238,0.20);
+
+  /* ==========================================
+     SHADOWS
+  ========================================== */
+
+  --shadow-sm:
+    0 8px 20px rgba(0,0,0,0.20);
+
+  --shadow:
+    0 10px 30px rgba(56,189,248,0.15);
+
+  --shadow-lg:
+    0 20px 60px rgba(56,189,248,0.18);
+
+  --shadow-xl:
+    0 30px 80px rgba(0,0,0,0.45);
+
+  /* ==========================================
+     GLASSMORPHISM
+  ========================================== */
+
+  --glass-bg:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.08),
+      rgba(255,255,255,0.03)
+    );
+
+  --glass-border:
+    1px solid rgba(255,255,255,0.08);
+
+  --glass-blur: blur(18px);
+
+  /* ==========================================
+     GRADIENTS
+  ========================================== */
+
+  --gradient-primary:
+    linear-gradient(
+      135deg,
+      #38bdf8,
+      #8b5cf6
+    );
+
+  --gradient-secondary:
+    linear-gradient(
+      135deg,
+      #22d3ee,
+      #38bdf8
+    );
+
+  --gradient-nebula:
+    linear-gradient(
+      135deg,
+      rgba(56,189,248,0.25),
+      rgba(139,92,246,0.25)
+    );
+
+  --gradient-card:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.06),
+      rgba(255,255,255,0.02)
+    );
+
+  --gradient-space:
+    radial-gradient(
+      circle at center,
+      #0b1120 0%,
+      #050816 45%,
+      #02040a 100%
+    );
+
+  /* ==========================================
+     TYPOGRAPHY
+  ========================================== */
+
+  --font-primary:
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+
+  --font-heading:
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+
+  --font-mono:
+    "Consolas",
+    monospace;
+
+  /* ==========================================
+     BORDER RADIUS
+  ========================================== */
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  /* ==========================================
+     TRANSITIONS
+  ========================================== */
+
+  --transition-fast:
+    all 0.2s ease;
+
+  --transition:
+    all 0.35s ease;
+
+  --transition-slow:
+    all 0.6s ease;
+
+  --cubic:
+    cubic-bezier(
+      0.22,
+      1,
+      0.36,
+      1
+    );
+
+  /* ==========================================
+     LAYOUT
+  ========================================== */
+
+  --container-width: 1440px;
+
+  --section-padding:
+    clamp(5rem, 8vw, 8rem);
+
+  --navbar-height: 80px;
+
+  /* ==========================================
+     Z-INDEX
+  ========================================== */
+
+  --z-background: -5;
+  --z-stars: -2;
+  --z-content: 10;
+  --z-navbar: 1000;
+  --z-modal: 5000;
+  --z-loader: 9999;
+}

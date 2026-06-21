@@ -1,0 +1,356 @@
+[
+{
+"id": 1,
+"title": "Andromeda Galaxy",
+"category": "Galaxies",
+"image": "../assets/images/andromeda.jpg",
+"description": "The nearest major galaxy to the Milky Way and the largest galaxy in the Local Group."
+},
+{
+"id": 2,
+"title": "Milky Way Galaxy",
+"category": "Galaxies",
+"image": "../assets/images/milky-way.jpg",
+"description": "Our home galaxy containing billions of stars, nebulae, and planetary systems."
+},
+{
+"id": 3,
+"title": "Triangulum Galaxy",
+"category": "Galaxies",
+"image": "../assets/images/triangulum.jpg",
+"description": "A spiral galaxy located approximately 3 million light-years from Earth."
+},
+{
+"id": 4,
+"title": "Whirlpool Galaxy",
+"category": "Galaxies",
+"image": "../assets/images/whirlpool.jpg",
+"description": "A grand-design spiral galaxy interacting with a companion galaxy."
+},
+{
+"id": 5,
+"title": "Sombrero Galaxy",
+"category": "Galaxies",
+"image": "../assets/images/sombrero.jpg",
+"description": "A galaxy famous for its bright nucleus and prominent dust lane."
+},
+{
+"id": 6,
+"title": "Large Magellanic Cloud",
+"category": "Galaxies",
+"image": "../assets/images/lmc.jpg",
+"description": "A satellite galaxy of the Milky Way visible from the Southern Hemisphere."
+},
+{
+"id": 7,
+"title": "Small Magellanic Cloud",
+"category": "Galaxies",
+"image": "../assets/images/smc.jpg",
+"description": "A dwarf galaxy near the Milky Way and companion to the Large Magellanic Cloud."
+},
+
+{
+"id": 8,
+"title": "M87 Black Hole",
+"category": "Black Holes",
+"image": "../assets/images/m87hole.jpg",
+"description": "The first black hole ever directly imaged by the Event Horizon Telescope."
+},
+{
+"id": 9,
+"title": "Sagittarius A*",
+"category": "Black Holes",
+"image": "../assets/images/Sagittarius-A.jpg",
+"description": "The supermassive black hole located at the center of the Milky Way."
+},
+{
+"id": 10,
+"title": "TON 618",
+"category": "Black Holes",
+"image": "../assets/images/ton618.jpg",
+"description": "One of the most massive black holes known in the observable universe."
+},
+{
+"id": 11,
+"title": "Gaia BH1",
+"category": "Black Holes",
+"image": "../assets/images/gaiabh1.jpg",
+"description": "The closest known black hole to Earth discovered using Gaia observations."
+},
+{
+"id": 12,
+"title": "Cygnus X-1",
+"category": "Black Holes",
+"image": "../assets/images/cygnusX-1.jpg",
+"description": "One of the first strong black hole candidates ever discovered."
+},
+{
+"id": 13,
+"title": "Holmberg 15A",
+"category": "Black Holes",
+"image": "../assets/images/holmberg15a.jpg",
+"description": "A galaxy believed to host one of the largest black holes ever found."
+},
+{
+"id": 14,
+"title": "NGC 4889 Black Hole",
+"category": "Black Holes",
+"image": "../assets/images/ngc4889.jpg",
+"description": "A giant elliptical galaxy containing a supermassive black hole."
+},
+
+{
+"id": 15,
+"title": "Mercury",
+"category": "Planets",
+"image": "../assets/images/mercury.jpg",
+"description": "The smallest and innermost planet in the Solar System."
+},
+{
+"id": 16,
+"title": "Venus",
+"category": "Planets",
+"image": "../assets/images/venus.jpg",
+"description": "The hottest planet in the Solar System due to its dense atmosphere."
+},
+{
+"id": 17,
+"title": "Earth",
+"category": "Planets",
+"image": "../assets/images/earth.jpg",
+"description": "The only known planet to support life."
+},
+{
+"id": 18,
+"title": "Mars",
+"category": "Planets",
+"image": "../assets/images/mars.jpg",
+"description": "Known as the Red Planet and a target for future human exploration."
+},
+{
+"id": 19,
+"title": "Jupiter",
+"category": "Planets",
+"image": "../assets/images/jupiter.jpg",
+"description": "The largest planet in the Solar System."
+},
+{
+"id": 20,
+"title": "Saturn",
+"category": "Planets",
+"image": "../assets/images/saturn.jpg",
+"description": "Famous for its spectacular ring system."
+},
+{
+"id": 21,
+"title": "Uranus",
+"category": "Planets",
+"image": "../assets/images/uranus.jpg",
+"description": "An ice giant that rotates on its side."
+},
+{
+"id": 22,
+"title": "Neptune",
+"category": "Planets",
+"image": "../assets/images/neptune.jpg",
+"description": "The farthest major planet from the Sun."
+},
+
+{
+"id": 23,
+"title": "Orion",
+"category": "Constellations",
+"image": "../assets/images/orion.jpg",
+"description": "One of the most recognizable constellations in the night sky."
+},
+{
+"id": 24,
+"title": "Cygnus",
+"category": "Constellations",
+"image": "../assets/images/cygnus.jpg",
+"description": "A prominent northern constellation representing a swan."
+},
+{
+"id": 25,
+"title": "Cassiopeia",
+"category": "Constellations",
+"image": "../assets/images/cassiopeia.jpg",
+"description": "A constellation known for its distinctive W shape."
+},
+{
+"id": 26,
+"title": "Pegasus",
+"category": "Constellations",
+"image": "../assets/images/pegasus.jpg",
+"description": "The mythical winged horse of Greek mythology."
+},
+{
+"id": 27,
+"title": "Draco",
+"category": "Constellations",
+"image": "../assets/images/draco.jpg",
+"description": "A constellation representing a dragon winding around the northern sky."
+},
+{
+"id": 28,
+"title": "Leo",
+"category": "Constellations",
+"image": "../assets/images/leo.jpg",
+"description": "A zodiac constellation representing a lion."
+},
+{
+"id": 29,
+"title": "Taurus",
+"category": "Constellations",
+"image": "../assets/images/taurus.jpg",
+"description": "A zodiac constellation containing the bright star Aldebaran."
+},
+{
+"id": 30,
+"title": "Scorpius",
+"category": "Constellations",
+"image": "../assets/images/scorpius.jpg",
+"description": "A constellation famous for its scorpion-shaped pattern."
+},
+
+{
+"id": 31,
+"title": "Apollo 11",
+"category": "Space Exploration",
+"image": "../assets/images/apollo11.jpg",
+"description": "The historic mission that landed humans on the Moon in 1969."
+},
+{
+"id": 32,
+"title": "Hubble Space Telescope",
+"category": "Space Exploration",
+"image": "../assets/images/hubble.jpg",
+"description": "A revolutionary observatory that transformed astronomy."
+},
+{
+"id": 33,
+"title": "International Space Station",
+"category": "Space Exploration",
+"image": "../assets/images/iss.jpg",
+"description": "A permanently crewed orbital laboratory around Earth."
+},
+{
+"id": 34,
+"title": "James Webb Space Telescope",
+"category": "Space Exploration",
+"image": "../assets/images/james-webb.jpg",
+"description": "The most powerful space telescope ever launched."
+},
+{
+"id": 35,
+"title": "Yuri Gagarin",
+"category": "Space Exploration",
+"image": "../assets/images/yuri-gagarin.jpg",
+"description": "The first human to travel into outer space."
+},
+{
+"id": 36,
+"title": "Mars Mission",
+"category": "Space Exploration",
+"image": "../assets/images/mars-mission.jpg",
+"description": "Future exploration efforts aimed at sending humans to Mars."
+},
+{
+"id": 37,
+"title": "Milky Way Core",
+"category": "Galaxies",
+"image": "../assets/images/milky-way1.jpg",
+"description": "A stunning view of the dense central region of the Milky Way galaxy."
+},
+{
+"id": 38,
+"title": "Andromeda Constellation Region",
+"category": "Constellations",
+"image": "../assets/images/andromedacon.jpg",
+"description": "The constellation region containing the famous Andromeda Galaxy."
+},
+{
+"id": 39,
+"title": "Gemini",
+"category": "Constellations",
+"image": "../assets/images/gemini.jpg",
+"description": "A zodiac constellation representing the twins Castor and Pollux."
+},
+{
+"id": 40,
+"title": "Ursa Major",
+"category": "Constellations",
+"image": "../assets/images/ursa-major.jpg",
+"description": "The Great Bear, home to the famous Big Dipper asterism."
+},
+{
+"id": 41,
+"title": "Ursa Minor",
+"category": "Constellations",
+"image": "../assets/images/ursa-minor.jpg",
+"description": "The Little Bear constellation containing Polaris, the North Star."
+},
+{
+"id": 42,
+"title": "Phoenix A",
+"category": "Black Holes",
+"image": "../assets/images/phoenixa.jpg",
+"description": "A galaxy cluster containing one of the most energetic black hole systems known."
+},
+{
+"id": 43,
+"title": "Earth From Space",
+"category": "Planets",
+"image": "../assets/images/earth1.jpg",
+"description": "A beautiful orbital view of Earth showing oceans, continents, and atmosphere."
+},
+{
+"id": 44,
+"title": "Solar System Overview",
+"category": "Planets",
+"image": "../assets/images/solar-system.jpg",
+"description": "A complete view of the Sun and the major planets of our Solar System."
+},
+{
+"id": 45,
+"title": "Deep Space",
+"category": "Deep Space",
+"image": "../assets/images/space.jpeg",
+"description": "A breathtaking view into the vast depths of the observable universe."
+},
+{
+"id": 46,
+"title": "Local Group Galaxies",
+"category": "Galaxies",
+"image": "../assets/images/lmc.jpg",
+"description": "The neighboring galaxies that accompany the Milky Way in the Local Group."
+},
+{
+"id": 47,
+"title": "Cosmic Evolution",
+"category": "Deep Space",
+"image": "../assets/images/big-bang.jpg",
+"description": "An artistic representation of the evolution of the universe since the Big Bang."
+},
+{
+"id": 48,
+"title": "First Light",
+"category": "Deep Space",
+"image": "../assets/images/first-stars.jpg",
+"description": "The formation of the first stars that illuminated the young universe."
+},
+{
+"id": 49,
+"title": "Humanity's Future on Mars",
+"category": "Space Exploration",
+"image": "../assets/images/mars-mission.jpg",
+"description": "Concepts and technologies for future human missions to Mars."
+},
+{
+"id": 50,
+"title": "James Webb Discoveries",
+"category": "Space Exploration",
+"image": "../assets/images/james-webb.jpg",
+"description": "The revolutionary observations made possible by the James Webb Space Telescope."
+}
+]

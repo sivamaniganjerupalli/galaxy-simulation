@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore galaxies across the observable universe with GalaxyVerse."
+    >
+
+    <title>
+        Galaxy Explorer | GalaxyVerse
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/galaxy.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- COSMIC BACKGROUND -->
+
+    <canvas id="galaxyCanvas"></canvas>
+
+    <div class="shooting-stars"></div>
+
+    <div class="galaxy-glow"></div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            GalaxyVerse
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="../index.html">
+
+                Home
+
+            </a>
+
+            <a
+                href="galaxy.html"
+                class="active"
+            >
+
+                Galaxies
+
+            </a>
+
+            <a href="solar-system.html">
+
+                Solar System
+
+            </a>
+
+            <a href="black-hole.html">
+
+                Black Holes
+
+            </a>
+
+            <a href="constellations.html">
+
+                Constellations
+
+            </a>
+
+            <a href="timeline.html">
+
+                Timeline
+
+            </a>
+
+            <a href="gallery.html">
+
+                Gallery
+
+            </a>
+
+            <a href="about.html">
+
+                About
+
+            </a>
+
+        </div>
+
+        <button
+            class="explore-btn"
+            onclick="window.location.href='solar-system.html'"
+        >
+
+            Next Mission
+
+        </button>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="explorer-hero">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+
+                🌌 INTERACTIVE GALAXY DATABASE
+
+            </div>
+
+            <h1>
+
+                Explore The
+
+                <span class="gradient-text">
+
+                    Galaxies
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                Travel billions of light years
+                through spiral, elliptical,
+                barred spiral and irregular
+                galaxies. Explore cosmic giants,
+                discover their secrets and learn
+                how galaxies shape the universe.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="stats-section">
+
+        <div class="stat-box">
+
+            <h2 id="galaxyCount">
+
+                0
+
+            </h2>
+
+            <p>
+
+                Catalogued Galaxies
+
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2>
+
+                100B+
+
+            </h2>
+
+            <p>
+
+                Observable Galaxies
+
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2>
+
+                13.8B
+
+            </h2>
+
+            <p>
+
+                Years Of Cosmic History
+
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2>
+
+                200B+
+
+            </h2>
+
+            <p>
+
+                Milky Way Stars
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH -->
+
+    <section class="controls-section">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search galaxies..."
+            >
+
+        </div>
+
+        <div class="filter-box">
+
+            <select id="typeFilter">
+
+                <option value="all">
+
+                    All Types
+
+                </option>
+
+                <option value="Spiral">
+
+                    Spiral
+
+                </option>
+
+                <option value="Barred Spiral">
+
+                    Barred Spiral
+
+                </option>
+
+                <option value="Elliptical">
+
+                    Elliptical
+
+                </option>
+
+                <option value="Irregular">
+
+                    Irregular
+
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED GALAXY -->
+
+    <section class="featured-galaxy">
+
+        <div class="featured-content">
+
+            <h2>
+
+                Featured Galaxy
+
+            </h2>
+
+            <h1>
+
+                Milky Way
+
+            </h1>
+
+            <p>
+
+                The Milky Way is our cosmic home,
+                containing more than 200 billion
+                stars, planetary systems, nebulae,
+                stellar clusters and the supermassive
+                black hole Sagittarius A* at its core.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- GALAXY GRID -->
+
+    <section>
+
+        <div
+            id="galaxyContainer"
+            class="galaxy-grid"
+        >
+
+            <!-- JS Generated -->
+
+        </div>
+
+    </section>
+
+    <!-- FACTS -->
+
+    <section class="facts-section">
+
+        <h2 class="section-title">
+
+            Galaxy Facts
+
+        </h2>
+
+        <div class="facts-grid">
+
+            <div class="fact-card">
+
+                <h2>
+
+                    2.5M
+
+                </h2>
+
+                <p>
+
+                    Light Years To Andromeda
+
+                </p>
+
+            </div>
+
+            <div class="fact-card">
+
+                <h2>
+
+                    100B+
+
+                </h2>
+
+                <p>
+
+                    Observable Galaxies
+
+                </p>
+
+            </div>
+
+            <div class="fact-card">
+
+                <h2>
+
+                    13.8B
+
+                </h2>
+
+                <p>
+
+                    Years Since Big Bang
+
+                </p>
+
+            </div>
+
+            <div class="fact-card">
+
+                <h2>
+
+                    4.5B
+
+                </h2>
+
+                <p>
+
+                    Years Until Milky Way
+                    Andromeda Collision
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MODAL -->
+
+    <div
+        class="modal"
+        id="galaxyModal"
+    >
+
+        <div class="modal-content">
+
+            <span id="closeModal">
+
+                &times;
+
+            </span>
+
+            <div id="modalBody">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <h2>
+
+            GalaxyVerse
+
+        </h2>
+
+        <p>
+
+            Explore galaxies,
+            stars, black holes,
+            constellations and the
+            wonders of the universe.
+
+        </p>
+
+        <p class="copyright">
+
+            © 2026 GalaxyVerse.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="../js/particles.js"></script>
+
+    <script src="../js/animations.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/galaxy.js"></script>
+
+</body>
+
+</html>

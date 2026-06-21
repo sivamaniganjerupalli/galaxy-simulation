@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="GalaxyVerse Solar System Explorer - Explore planets, compare worlds, discover space facts and experience a NASA-grade interactive Solar System."
+    >
+
+    <title>
+        Solar System Explorer | GalaxyVerse
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/planets.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            GalaxyVerse
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="../index.html">
+
+                Home
+
+            </a>
+
+            <a href="galaxy.html">
+
+                Galaxies
+
+            </a>
+
+            <a
+                href="solar-system.html"
+                class="active"
+            >
+
+                Solar System
+
+            </a>
+
+            <a href="black-hole.html">
+
+                Black Holes
+
+            </a>
+
+            <a href="constellations.html">
+
+                Constellations
+
+            </a>
+
+            <a href="timeline.html">
+
+                Timeline
+
+            </a>
+
+            <a href="gallery.html">
+
+                Gallery
+
+            </a>
+
+            <a href="about.html">
+
+                About
+
+            </a>
+
+        </div>
+
+        <button
+            class="explore-btn"
+            onclick="window.location.href='black-hole.html'"
+        >
+
+            Next Mission
+
+        </button>
+
+    </nav>
+
+    <!-- ==========================================
+         HERO
+    =========================================== -->
+
+    <section class="solar-hero">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+
+                🪐 INTERACTIVE PLANETARY OBSERVATORY
+
+            </div>
+
+            <h1>
+
+                Solar System
+
+                <span class="gradient-text">
+
+                    Explorer
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                Journey through our Solar System,
+                explore planets, compare worlds,
+                analyze planetary characteristics,
+                and discover fascinating cosmic
+                facts through a premium interactive
+                observatory experience.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         STATS
+    =========================================== -->
+
+    <section class="planet-stats">
+
+        <div class="stat-card">
+
+            <h2>
+
+                8
+
+            </h2>
+
+            <p>
+
+                Major Planets
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>
+
+                4.6B
+
+            </h2>
+
+            <p>
+
+                Years Old
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>
+
+                150M
+
+            </h2>
+
+            <p>
+
+                KM Earth To Sun
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>
+
+                290+
+
+            </h2>
+
+            <p>
+
+                Known Moons
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         SOLAR SYSTEM VISUALIZATION
+    =========================================== -->
+
+    <section class="solar-visual">
+
+        <div class="milkyway-band"></div>
+
+        <div class="cosmic-haze"></div>
+
+        <h2 class="section-title">
+
+            Interactive Solar System
+
+        </h2>
+
+        <div class="solar-system">
+
+            <div class="sun"></div>
+
+            <div class="orbit orbit-1">
+                <div class="planet mercury"></div>
+            </div>
+
+            <div class="orbit orbit-2">
+                <div class="planet venus"></div>
+            </div>
+
+            <div class="orbit orbit-3">
+                <div class="planet earth"></div>
+            </div>
+
+            <div class="orbit orbit-4">
+                <div class="planet mars"></div>
+            </div>
+
+            <div class="orbit orbit-5">
+                <div class="planet jupiter"></div>
+            </div>
+
+            <div class="orbit orbit-6">
+                <div class="planet saturn"></div>
+            </div>
+
+            <div class="orbit orbit-7">
+                <div class="planet uranus"></div>
+            </div>
+
+            <div class="orbit orbit-8">
+                <div class="planet neptune"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         SEARCH
+    =========================================== -->
+
+    <section class="controls-section">
+
+        <input
+            type="text"
+            id="planetSearch"
+            placeholder="Search planets, types, worlds..."
+        >
+
+    </section>
+
+    <!-- ==========================================
+         PLANET DATABASE
+    =========================================== -->
+
+    <section>
+
+        <h2 class="section-title">
+
+            Planet Database
+
+        </h2>
+
+        <div
+            id="planetContainer"
+            class="planet-grid"
+        >
+
+            <!-- Generated By JS -->
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         PLANET COMPARISON
+    =========================================== -->
+
+    <section class="comparison-section">
+
+        <h2 class="section-title">
+
+            Planet Comparison
+
+        </h2>
+
+        <div class="comparison-grid">
+
+            <div class="compare-card">
+
+                <h3>
+
+                    Earth
+
+                </h3>
+
+                <p>
+
+                    Diameter:
+                    12,742 km
+
+                </p>
+
+                <p>
+
+                    Moons:
+                    1
+
+                </p>
+
+                <p>
+
+                    Surface:
+                    Rocky
+
+                </p>
+
+            </div>
+
+            <div class="compare-card">
+
+                <h3>
+
+                    Jupiter
+
+                </h3>
+
+                <p>
+
+                    Diameter:
+                    139,820 km
+
+                </p>
+
+                <p>
+
+                    Moons:
+                    95+
+
+                </p>
+
+                <p>
+
+                    Surface:
+                    Gas Giant
+
+                </p>
+
+            </div>
+
+            <div class="compare-card">
+
+                <h3>
+
+                    Neptune
+
+                </h3>
+
+                <p>
+
+                    Diameter:
+                    49,244 km
+
+                </p>
+
+                <p>
+
+                    Moons:
+                    14
+
+                </p>
+
+                <p>
+
+                    Surface:
+                    Ice Giant
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         SPACE FACTS
+    =========================================== -->
+
+    <section class="facts-section">
+
+        <h2 class="section-title">
+
+            Space Facts
+
+        </h2>
+
+        <div class="facts-grid">
+
+            <div class="fact-card">
+
+                <h3>
+
+                    Venus
+
+                </h3>
+
+                <p>
+
+                    A single day on Venus lasts
+                    longer than an entire year
+                    on Venus.
+
+                </p>
+
+            </div>
+
+            <div class="fact-card">
+
+                <h3>
+
+                    Jupiter
+
+                </h3>
+
+                <p>
+
+                    Jupiter is so large that
+                    more than 1,300 Earths
+                    could fit inside it.
+
+                </p>
+
+            </div>
+
+            <div class="fact-card">
+
+                <h3>
+
+                    Neptune
+
+                </h3>
+
+                <p>
+
+                    Neptune has the fastest
+                    winds in the Solar System,
+                    exceeding 2,000 km/h.
+
+                </p>
+
+            </div>
+
+            <div class="fact-card">
+
+                <h3>
+
+                    Saturn
+
+                </h3>
+
+                <p>
+
+                    Saturn's magnificent rings
+                    are composed mostly of ice,
+                    dust and rocky particles.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         MODAL
+    =========================================== -->
+
+    <div
+        id="planetModal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <span id="closePlanetModal">
+
+                &times;
+
+            </span>
+
+            <div id="planetModalBody">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <h2>
+
+            GalaxyVerse
+
+        </h2>
+
+        <p>
+
+            Discover planets, compare worlds,
+            explore celestial mechanics and
+            experience the wonders of our
+            Solar System.
+
+        </p>
+
+        <p class="copyright">
+
+            © 2026 GalaxyVerse.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- ==========================================
+         SCRIPTS
+    =========================================== -->
+
+    <script src="../js/particles.js"></script>
+
+    <script src="../js/animations.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/planets.js"></script>
+
+</body>
+
+</html>

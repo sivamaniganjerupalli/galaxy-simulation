@@ -1,0 +1,429 @@
+/* ==========================================
+   PREMIUM NASA NAVBAR
+========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:min(92%,1400px);
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 30px;
+
+    z-index:var(--z-navbar);
+
+    background:
+        rgba(2,4,10,.75);
+
+    backdrop-filter:
+        blur(20px);
+
+    -webkit-backdrop-filter:
+        blur(20px);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    box-shadow:
+
+        0 10px 40px rgba(0,0,0,.35),
+
+        0 0 40px rgba(56,189,248,.08);
+
+    transition:
+        var(--transition);
+}
+
+/* ==========================================
+   NAVBAR GLOW BORDER
+========================================== */
+
+.navbar::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:24px;
+
+    padding:1px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(56,189,248,.35),
+            rgba(139,92,246,.25),
+            rgba(34,211,238,.25)
+        );
+
+    mask:
+        linear-gradient(#fff 0 0)
+        content-box,
+        linear-gradient(#fff 0 0);
+
+    mask-composite:exclude;
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0)
+        content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    pointer-events:none;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    font-size:2rem;
+    font-weight:900;
+
+    letter-spacing:.5px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #38bdf8,
+            #8b5cf6
+        );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    cursor:pointer;
+
+    transition:
+        var(--transition);
+}
+
+.logo:hover{
+
+    transform:
+        scale(1.05);
+
+    filter:
+        drop-shadow(
+            0 0 15px
+            rgba(56,189,248,.5)
+        );
+}
+
+/* ==========================================
+   NAV LINKS
+========================================== */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+}
+
+.nav-links a{
+
+    position:relative;
+
+    color:var(--text-primary);
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:
+        var(--transition);
+}
+
+/* Hover */
+
+.nav-links a:hover{
+
+    color:var(--primary);
+}
+
+/* Animated Underline */
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+    height:2px;
+
+    border-radius:999px;
+
+    background:
+        var(--gradient-primary);
+
+    transition:
+        var(--transition);
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+}
+
+/* Active Link */
+
+.nav-links a.active{
+
+    color:var(--primary);
+}
+
+.nav-links a.active::after{
+
+    width:100%;
+}
+
+/* ==========================================
+   CTA BUTTON
+========================================== */
+
+.explore-btn{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:.95rem 1.8rem;
+
+    border:none;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:
+        var(--gradient-primary);
+
+    box-shadow:
+        var(--glow-blue);
+
+    transition:
+        var(--transition);
+
+    overflow:hidden;
+}
+
+.explore-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:100%;
+    height:100%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.35),
+            transparent
+        );
+
+    transition:
+        .7s;
+}
+
+.explore-btn:hover::before{
+
+    left:120%;
+}
+
+.explore-btn:hover{
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+
+        var(--glow-blue),
+
+        var(--shadow-lg);
+}
+
+/* ==========================================
+   MOBILE TOGGLE
+   (FOR FUTURE JS MENU)
+========================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    color:white;
+
+    cursor:pointer;
+}
+
+/* ==========================================
+   NAVBAR SCROLLED STATE
+========================================== */
+
+.navbar.scrolled{
+
+    top:12px;
+
+    background:
+        rgba(2,4,10,.88);
+
+    box-shadow:
+
+        0 15px 50px rgba(0,0,0,.5),
+
+        0 0 50px rgba(56,189,248,.12);
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:1200px){
+
+    .nav-links{
+
+        gap:1.4rem;
+    }
+
+    .nav-links a{
+
+        font-size:.9rem;
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:992px){
+
+    .navbar{
+
+        width:95%;
+
+        padding:0 20px;
+    }
+
+    .nav-links{
+
+        gap:1rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+
+        top:12px;
+
+        height:72px;
+
+        padding:0 18px;
+    }
+
+    .logo{
+
+        font-size:1.6rem;
+    }
+
+    .nav-links{
+
+        display:none;
+    }
+
+    .menu-toggle{
+
+        display:flex;
+
+        align-items:center;
+        justify-content:center;
+    }
+
+    .explore-btn{
+
+        padding:.8rem 1.3rem;
+
+        font-size:.9rem;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .navbar{
+
+        width:96%;
+    }
+
+    .logo{
+
+        font-size:1.4rem;
+    }
+
+    .explore-btn{
+
+        padding:.75rem 1.1rem;
+
+        font-size:.85rem;
+    }
+
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+
+        Space Gallery | GalaxyVerse
+
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/gallery.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            GalaxyVerse
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="galaxy.html">
+                Galaxies
+            </a>
+
+            <a href="solar-system.html">
+                Solar System
+            </a>
+
+            <a href="black-hole.html">
+                Black Holes
+            </a>
+
+            <a href="constellations.html">
+                Constellations
+            </a>
+
+            <a href="timeline.html">
+                Timeline
+            </a>
+
+            <a
+                href="gallery.html"
+                class="active"
+            >
+                Gallery
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+        <button
+    class="explore-btn"
+    onclick="location.href='galaxy.html'"
+>
+
+    Launch Mission
+
+</button>
+
+    </nav>
+
+    <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
+
+    <section class="gallery-hero">
+
+        <div id="gallery-starfield"></div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-tag">
+
+                🌌 NASA INSPIRED VISUAL ARCHIVE
+
+            </div>
+
+            <h1>
+
+                Explore The
+
+                <span class="gradient-text">
+
+                    Visual Universe
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                Discover breathtaking galaxies,
+                planets, black holes,
+                constellations, nebulae,
+                and historic space missions
+                through an immersive cosmic
+                gallery experience.
+
+            </p>
+
+            <a
+                href="#gallerySection"
+                class="hero-btn"
+            >
+
+                Explore Gallery
+
+            </a>
+
+        </div>
+                <!-- ==========================================
+             HERO VISUAL
+        =========================================== -->
+
+        <div class="gallery-visual">
+
+            <div class="cosmic-glow"></div>
+
+            <div class="cosmic-core"></div>
+
+            <div class="orbit-ring orbit-1">
+
+                <div class="orbit-planet small"></div>
+
+            </div>
+
+            <div class="orbit-ring orbit-2">
+
+                <div class="orbit-planet medium"></div>
+
+            </div>
+
+            <div class="orbit-ring orbit-3">
+
+                <div class="orbit-planet large"></div>
+
+            </div>
+
+            <div
+                class="floating-planet one"
+            ></div>
+
+            <div
+                class="floating-planet two"
+            ></div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         GALLERY STATS
+    =========================================== -->
+
+    <section class="gallery-stats">
+
+        <div class="gallery-stat">
+
+            <h2>
+
+                50+
+
+            </h2>
+
+            <p>
+
+                Space Images
+
+            </p>
+
+        </div>
+
+        <div class="gallery-stat">
+
+            <h2>
+
+                6
+
+            </h2>
+
+            <p>
+
+                Categories
+
+            </p>
+
+        </div>
+
+        <div class="gallery-stat">
+
+            <h2>
+
+                NASA
+
+            </h2>
+
+            <p>
+
+                Inspired Design
+
+            </p>
+
+        </div>
+
+        <div class="gallery-stat">
+
+            <h2>
+
+                HD
+
+            </h2>
+
+            <p>
+
+                Visual Collection
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         SEARCH & FILTERS
+    =========================================== -->
+
+    <section
+        class="gallery-controls"
+        id="gallerySection"
+    >
+
+        <div class="controls-wrapper">
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="gallerySearch"
+                    placeholder="Search galaxies, planets, black holes..."
+                >
+
+            </div>
+
+            <div class="filter-buttons">
+
+                <button
+                    class="filter-btn active"
+                    data-category="All"
+                >
+
+                    All
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Galaxies"
+                >
+
+                    Galaxies
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Planets"
+                >
+
+                    Planets
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Black Holes"
+                >
+
+                    Black Holes
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Constellations"
+                >
+
+                    Constellations
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="Space Exploration"
+                >
+
+                    Space Exploration
+
+                </button>
+                <button
+                    class="filter-btn"
+                    data-category="Deep Space"
+                >
+
+                    Deep Space
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ==========================================
+         GALLERY GRID
+    =========================================== -->
+
+    <section class="gallery-section">
+
+        <div
+            class="gallery-grid"
+            id="galleryContainer"
+        >
+
+            <!-- JS GENERATED -->
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         FEATURED COLLECTION
+    =========================================== -->
+
+    <section class="featured-gallery">
+
+        <div class="featured-content">
+
+            <span>
+
+                FEATURED COLLECTION
+
+            </span>
+
+            <h2>
+
+                Wonders Of The Cosmos
+
+            </h2>
+
+            <p>
+
+                Explore some of the most
+                extraordinary objects in the
+                observable universe, from
+                giant spiral galaxies and
+                colorful nebulae to powerful
+                black holes and historic
+                space missions.
+
+            </p>
+
+        </div>
+
+        <div class="featured-showcase">
+
+            <div class="showcase-card">
+
+                <img
+                    src="../assets/images/milky-way1.jpg"
+                    alt="Milky Way"
+                >
+
+                <div
+                    class="showcase-card-content"
+                >
+
+                    <h3>
+
+                        The Milky Way
+
+                    </h3>
+
+                    <p>
+
+                        Our home galaxy
+                        containing hundreds
+                        of billions of stars
+                        and countless worlds.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="showcase-card">
+
+                <img
+                    src="../assets/images/james-webb.jpg"
+                    alt="James Webb"
+                >
+
+                <div
+                    class="showcase-card-content"
+                >
+
+                    <h3>
+
+                        James Webb Telescope
+
+                    </h3>
+
+                    <p>
+
+                        Humanity's most
+                        powerful space
+                        observatory exploring
+                        the earliest galaxies.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="showcase-card">
+
+                <img
+                    src="../assets/images/smc.jpg"
+                    alt="Black Hole"
+                >
+
+                <div
+                    class="showcase-card-content"
+                >
+
+                    <h3>
+
+                        Supermassive Black Holes
+
+                    </h3>
+
+                    <p>
+
+                        Mysterious cosmic
+                        giants shaping the
+                        evolution of galaxies.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ==========================================
+         GALLERY MODAL
+    =========================================== -->
+
+    <div
+        class="gallery-modal"
+        id="galleryModal"
+    >
+
+        <button
+            id="closeGalleryModal"
+        >
+
+            &times;
+
+        </button>
+
+        <button
+            class="modal-nav modal-prev"
+            onclick="showPreviousImage()"
+        >
+
+            ❮
+
+        </button>
+
+        <button
+            class="modal-nav modal-next"
+            onclick="showNextImage()"
+        >
+
+            ❯
+
+        </button>
+
+        <div class="gallery-modal-content">
+
+            <div
+                class="modal-image-wrapper"
+            >
+
+                <img
+                    id="modalImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+            <div class="modal-sidebar">
+
+                <div
+                    class="modal-category"
+                    id="modalCategory"
+                >
+
+                </div>
+
+                <h2
+                    id="modalTitle"
+                >
+
+                </h2>
+
+                <p
+                    id="modalDescription"
+                >
+
+                </p>
+
+                <div
+                    class="modal-actions"
+                >
+
+                <a
+                        id="downloadImageBtn"
+                        href="#"
+                        class="download-btn"
+                        download
+                    >
+
+                        Download Wallpaper
+
+                    </a>
+
+                    
+
+                    <button
+                        class="info-btn"
+                        onclick="location.href='timeline.html'"
+                    >
+
+                        GalaxyVerse Archive
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+
+                GalaxyVerse
+
+            </h2>
+
+            <p>
+
+                Explore galaxies,
+                stars, planets,
+                black holes,
+                constellations,
+                cosmic history,
+                and the wonders
+                of the observable
+                universe.
+
+            </p>
+
+            <p>
+
+                © 2026 GalaxyVerse.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================================
+         SCRIPT
+    =========================================== -->
+
+    <script
+        src="../js/gallery.js"
+    ></script>
+
+</body>
+
+</html>

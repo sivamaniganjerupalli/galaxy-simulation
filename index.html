@@ -1,14 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Realistic Galaxy Simulation</title>
-  <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="GalaxyVerse - Premium Interactive Space Exploration Platform. Explore galaxies, planets, black holes, constellations, timelines and cosmic discoveries."
+    >
+
+    <title>
+        GalaxyVerse | Interactive Space Exploration Platform
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/main.css"
+    >
+
 </head>
+
 <body>
-  <canvas id="galaxyCanvas"></canvas>
-  <div class="shooting-stars"></div> <!-- Container for shooting stars -->
-  <script src="script.js"></script>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            GalaxyVerse
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="pages/galaxy.html">
+                Galaxies
+            </a>
+
+            <a href="pages/solar-system.html">
+                Solar System
+            </a>
+
+            <a href="pages/black-hole.html">
+                Black Holes
+            </a>
+
+            <a href="pages/constellations.html">
+                Constellations
+            </a>
+
+            <a href="pages/timeline.html">
+                Timeline
+            </a>
+
+            <a href="pages/gallery.html">
+                Gallery
+            </a>
+
+            <a href="pages/about.html">
+                About
+            </a>
+
+        </div>
+
+        <button
+            class="explore-btn"
+            onclick="window.location.href='pages/galaxy.html'"
+        >
+            Launch Mission
+        </button>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                🚀 NASA Grade Interactive Observatory
+            </div>
+
+            <h1>
+
+                Explore The
+
+                <span class="gradient-text">
+
+                    Infinite Universe
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                Journey through galaxies,
+                planets, black holes,
+                constellations and cosmic
+                history inside a premium
+                interactive space exploration platform.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="primary-btn"
+                    onclick="window.location.href='pages/galaxy.html'"
+                >
+                    Launch Explorer
+                </button>
+
+                <button
+                    class="secondary-btn"
+                    onclick="document.getElementById('discover').scrollIntoView({behavior:'smooth'})"
+                >
+                    Discover More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h2>100B+</h2>
+
+            <p>
+                Observable Galaxies
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>13.8B</h2>
+
+            <p>
+                Years Of Cosmic History
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>200B+</h2>
+
+            <p>
+                Stars In The Milky Way
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>8</h2>
+
+            <p>
+                Major Solar System Planets
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- EXPLORE MODULES -->
+
+    <section
+        class="features"
+        id="discover"
+    >
+
+        <h2 class="section-title">
+
+            Explore The Cosmos
+
+        </h2>
+
+        <p class="section-subtitle">
+
+            Discover interactive observatories,
+            immersive simulations and scientific
+            databases designed for deep space exploration.
+
+        </p>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🌌
+                </div>
+
+                <h3>
+                    Galaxy Explorer
+                </h3>
+
+                <p>
+
+                    Travel across billions of light years
+                    and discover spiral, elliptical and
+                    irregular galaxies.
+
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="window.location.href='pages/galaxy.html'"
+                >
+                    Explore
+                </button>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🪐
+                </div>
+
+                <h3>
+                    Solar System
+                </h3>
+
+                <p>
+
+                    Navigate realistic planetary
+                    orbits and compare worlds
+                    across our solar neighborhood.
+
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="window.location.href='pages/solar-system.html'"
+                >
+                    Explore
+                </button>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🕳️
+                </div>
+
+                <h3>
+                    Black Hole Lab
+                </h3>
+
+                <p>
+
+                    Study event horizons,
+                    gravitational lensing and
+                    the most extreme objects in existence.
+
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="window.location.href='pages/black-hole.html'"
+                >
+                    Explore
+                </button>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Constellations
+                </h3>
+
+                <p>
+
+                    Explore celestial myths,
+                    night sky maps and the
+                    brightest stars in the heavens.
+
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="window.location.href='pages/constellations.html'"
+                >
+                    Explore
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED DISCOVERIES -->
+
+    <section class="features">
+
+        <h2 class="section-title">
+
+            Featured Discoveries
+
+        </h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <h3>
+                    James Webb Space Telescope
+                </h3>
+
+                <p>
+
+                    Revealing the earliest galaxies
+                    ever observed and transforming
+                    our understanding of the universe.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>
+                    Sagittarius A*
+                </h3>
+
+                <p>
+
+                    The supermassive black hole
+                    located at the center of the
+                    Milky Way Galaxy.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>
+                    Interstellar Exploration
+                </h3>
+
+                <p>
+
+                    Humanity's future beyond the
+                    Solar System and into nearby
+                    stellar neighborhoods.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TIMELINE CTA -->
+
+    <section class="features">
+
+        <h2 class="section-title">
+
+            Journey Through Time
+
+        </h2>
+
+        <p class="section-subtitle">
+
+            Follow the story of the universe
+            from the Big Bang to the future
+            of interstellar civilizations.
+
+        </p>
+
+        <div
+            style="
+                display:flex;
+                justify-content:center;
+            "
+        >
+
+            <button
+                class="primary-btn"
+                onclick="window.location.href='pages/timeline.html'"
+            >
+                Open Cosmic Timeline
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <h2>
+            GalaxyVerse
+        </h2>
+
+        <p>
+
+            Explore galaxies, planets,
+            black holes, constellations,
+            space history and future
+            cosmic discoveries.
+
+        </p>
+
+        <p class="copyright">
+
+            © 2026 GalaxyVerse.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,204 @@
+[
+  {
+    "id": 1,
+    "name": "Orion",
+    "type": "Hunter",
+    "brightestStar": "Rigel",
+    "season": "Winter",
+    "image": "../assets/images/orion.jpg",
+    "description": "Orion is one of the most recognizable constellations in the night sky and represents a mighty hunter from Greek mythology.",
+    "stars": [
+      { "x": 120, "y": 100 },
+      { "x": 180, "y": 150 },
+      { "x": 240, "y": 180 },
+      { "x": 280, "y": 250 },
+      { "x": 340, "y": 320 }
+    ]
+  },
+
+  {
+    "id": 2,
+    "name": "Ursa Major",
+    "type": "Great Bear",
+    "brightestStar": "Alioth",
+    "season": "Spring",
+    "image": "../assets/images/ursa-major.jpg",
+    "description": "Ursa Major contains the famous Big Dipper asterism and is one of the largest constellations in the northern sky.",
+    "stars": [
+      { "x": 100, "y": 150 },
+      { "x": 160, "y": 130 },
+      { "x": 220, "y": 140 },
+      { "x": 280, "y": 170 },
+      { "x": 350, "y": 200 },
+      { "x": 420, "y": 230 },
+      { "x": 500, "y": 260 }
+    ]
+  },
+
+  {
+    "id": 3,
+    "name": "Ursa Minor",
+    "type": "Little Bear",
+    "brightestStar": "Polaris",
+    "season": "All Year",
+    "image": "../assets/images/ursa-minor.jpg",
+    "description": "Ursa Minor contains Polaris, the North Star, which has guided travelers for centuries.",
+    "stars": [
+      { "x": 200, "y": 120 },
+      { "x": 250, "y": 150 },
+      { "x": 300, "y": 180 },
+      { "x": 360, "y": 210 },
+      { "x": 420, "y": 250 }
+    ]
+  },
+
+  {
+    "id": 4,
+    "name": "Cassiopeia",
+    "type": "Queen",
+    "brightestStar": "Schedar",
+    "season": "Autumn",
+    "image": "../assets/images/cassiopeia.jpg",
+    "description": "Cassiopeia is easily identified by its distinctive W-shaped pattern.",
+    "stars": [
+      { "x": 100, "y": 200 },
+      { "x": 170, "y": 130 },
+      { "x": 240, "y": 230 },
+      { "x": 310, "y": 130 },
+      { "x": 380, "y": 220 }
+    ]
+  },
+
+  {
+    "id": 5,
+    "name": "Andromeda",
+    "type": "Princess",
+    "brightestStar": "Alpheratz",
+    "season": "Autumn",
+    "image": "../assets/images/andromedacon.jpg",
+    "description": "Andromeda is home to the Andromeda Galaxy, the nearest major galaxy to the Milky Way.",
+    "stars": [
+      { "x": 100, "y": 150 },
+      { "x": 180, "y": 180 },
+      { "x": 280, "y": 220 },
+      { "x": 380, "y": 260 }
+    ]
+  },
+
+  {
+    "id": 6,
+    "name": "Pegasus",
+    "type": "Winged Horse",
+    "brightestStar": "Enif",
+    "season": "Autumn",
+    "image": "../assets/images/pegasus.jpg",
+    "description": "Pegasus is known for the Great Square of Pegasus and represents the mythical winged horse.",
+    "stars": [
+      { "x": 120, "y": 120 },
+      { "x": 280, "y": 120 },
+      { "x": 280, "y": 280 },
+      { "x": 120, "y": 280 }
+    ]
+  },
+
+  {
+    "id": 7,
+    "name": "Cygnus",
+    "type": "Swan",
+    "brightestStar": "Deneb",
+    "season": "Summer",
+    "image": "../assets/images/cygnus.jpg",
+    "description": "Cygnus is a prominent northern constellation that forms the Northern Cross.",
+    "stars": [
+      { "x": 250, "y": 80 },
+      { "x": 250, "y": 180 },
+      { "x": 250, "y": 280 },
+      { "x": 180, "y": 180 },
+      { "x": 320, "y": 180 }
+    ]
+  },
+
+  {
+    "id": 8,
+    "name": "Leo",
+    "type": "Lion",
+    "brightestStar": "Regulus",
+    "season": "Spring",
+    "image": "../assets/images/leo.jpg",
+    "description": "Leo is one of the zodiac constellations and represents a lion in Greek mythology.",
+    "stars": [
+      { "x": 100, "y": 120 },
+      { "x": 180, "y": 150 },
+      { "x": 260, "y": 200 },
+      { "x": 330, "y": 260 },
+      { "x": 420, "y": 280 }
+    ]
+  },
+
+  {
+    "id": 9,
+    "name": "Taurus",
+    "type": "Bull",
+    "brightestStar": "Aldebaran",
+    "season": "Winter",
+    "image": "../assets/images/taurus.jpg",
+    "description": "Taurus contains the bright red giant Aldebaran and the famous Pleiades star cluster.",
+    "stars": [
+      { "x": 120, "y": 180 },
+      { "x": 220, "y": 120 },
+      { "x": 300, "y": 180 },
+      { "x": 220, "y": 260 }
+    ]
+  },
+
+  {
+    "id": 10,
+    "name": "Scorpius",
+    "type": "Scorpion",
+    "brightestStar": "Antares",
+    "season": "Summer",
+    "image": "../assets/images/scorpius.jpg",
+    "description": "Scorpius is one of the most distinctive constellations and contains the red supergiant Antares.",
+    "stars": [
+      { "x": 120, "y": 100 },
+      { "x": 180, "y": 140 },
+      { "x": 220, "y": 220 },
+      { "x": 280, "y": 320 },
+      { "x": 350, "y": 380 }
+    ]
+  },
+
+  {
+    "id": 11,
+    "name": "Gemini",
+    "type": "Twins",
+    "brightestStar": "Pollux",
+    "season": "Winter",
+    "image": "../assets/images/gemini.jpg",
+    "description": "Gemini represents the mythological twins Castor and Pollux.",
+    "stars": [
+      { "x": 150, "y": 120 },
+      { "x": 150, "y": 260 },
+      { "x": 280, "y": 120 },
+      { "x": 280, "y": 260 }
+    ]
+  },
+
+  {
+    "id": 12,
+    "name": "Draco",
+    "type": "Dragon",
+    "brightestStar": "Eltanin",
+    "season": "Summer",
+    "image": "../assets/images/draco.jpg",
+    "description": "Draco winds around the northern sky and represents a mythical dragon.",
+    "stars": [
+      { "x": 80, "y": 180 },
+      { "x": 150, "y": 140 },
+      { "x": 240, "y": 170 },
+      { "x": 330, "y": 220 },
+      { "x": 420, "y": 280 },
+      { "x": 520, "y": 330 }
+    ]
+  }
+]

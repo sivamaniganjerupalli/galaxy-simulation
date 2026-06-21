@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore supermassive black holes, event horizons, singularities, Hawking radiation and gravitational lensing in GalaxyVerse."
+    >
+
+    <title>
+        Black Hole Laboratory | GalaxyVerse
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/blackhole.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            GalaxyVerse
+        </div>
+
+        <div class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="galaxy.html">
+                Galaxies
+            </a>
+
+            <a href="solar-system.html">
+                Solar System
+            </a>
+
+            <a
+                href="black-hole.html"
+                class="active"
+            >
+                Black Holes
+            </a>
+
+            <a href="constellations.html">
+                Constellations
+            </a>
+
+            <a href="timeline.html">
+                Timeline
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+        <button
+            class="explore-btn"
+            onclick="document.querySelector('.blackhole-grid').scrollIntoView({behavior:'smooth'})"
+        >
+            Launch Mission
+        </button>
+
+    </nav>
+
+    <!-- ==========================================
+         HERO
+    =========================================== -->
+
+    <section class="blackhole-hero">
+        <div id="blackhole-starfield"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+
+                🛰 NASA Deep Space Observatory
+
+            </div>
+
+            <h1>
+
+                Black Hole
+
+                <span class="gradient-text">
+
+                    Laboratory
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                Explore the most extreme objects in the universe.
+                Investigate event horizons, singularities,
+                gravitational lensing, Hawking radiation,
+                and the supermassive black holes hidden
+                inside distant galaxies.
+
+            </p>
+
+            <div class="hero-actions">
+
+                <a
+                    href="#blackholeDatabase"
+                    class="hero-btn primary"
+                >
+                    Explore Database
+                </a>
+
+                <a
+                    href="#simulation"
+                    class="hero-btn secondary"
+                >
+                    Event Horizon Lab
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="blackhole-animation">
+
+            <div class="orbit-ring ring-1"></div>
+
+            <div class="orbit-ring ring-2"></div>
+
+            <div class="orbit-ring ring-3"></div>
+
+            <div class="lensing-halo"></div>
+
+            <div class="accretion-ring"></div>
+
+            <div class="blackhole-core"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         STATS
+    =========================================== -->
+
+    <section class="stats-section">
+
+        <div class="stat-card">
+
+            <h2>
+                TON 618
+            </h2>
+
+            <p>
+                Largest Known Black Hole
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>
+                66B
+            </h2>
+
+            <p>
+                Solar Masses
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>
+                13.1B LY
+            </h2>
+
+            <p>
+                Distance From Earth
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>
+                4.3M
+            </h2>
+
+            <p>
+                Sagittarius A* Solar Masses
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         SEARCH
+    =========================================== -->
+
+    <section class="controls-section">
+
+        <input
+            type="text"
+            id="blackholeSearch"
+            placeholder="Search black holes, mass, type, distance..."
+        >
+
+    </section>
+
+    <!-- ==========================================
+         DATABASE
+    =========================================== -->
+
+    <section
+        id="blackholeContainer"
+        class="blackhole-grid"
+    >
+
+
+    </section>
+
+    <!-- ==========================================
+         EVENT HORIZON SIMULATION
+    =========================================== -->
+
+    <section
+        id="simulation"
+        class="simulation-section"
+    >
+
+        <h2 class="section-title">
+
+            Event Horizon Simulation
+
+        </h2>
+
+        <div class="simulation-card">
+
+            <div class="simulation-hole">
+
+                <div class="simulation-ring"></div>
+
+                <div class="simulation-core"></div>
+
+            </div>
+
+            <div class="simulation-content">
+
+                <h3>
+
+                    What Happens Near A Black Hole?
+
+                </h3>
+
+                <p>
+
+                    As matter approaches a black hole,
+                    gravity accelerates it to incredible
+                    speeds. Friction inside the accretion
+                    disk heats surrounding material until
+                    it glows brighter than entire galaxies.
+
+                </p>
+
+                <p>
+
+                    Beyond the event horizon,
+                    escape becomes impossible.
+                    Space and time become so distorted
+                    that all paths lead inward toward
+                    the singularity.
+
+                </p>
+
+                <div class="science-points">
+
+                    <div class="science-point">
+
+                        Event Horizon —
+                        Point of no return
+
+                    </div>
+
+                    <div class="science-point">
+
+                        Gravitational Lensing —
+                        Light bending around mass
+
+                    </div>
+
+                    <div class="science-point">
+
+                        Time Dilation —
+                        Time slows dramatically
+
+                    </div>
+
+                    <div class="science-point">
+
+                        Hawking Radiation —
+                        Quantum energy loss
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         FACTS
+    =========================================== -->
+
+    <section class="facts-section">
+
+        <h2 class="section-title">
+
+            Fascinating Facts
+
+        </h2>
+
+        <div class="facts-grid">
+
+            <div class="fact-card">
+
+                <h3>
+                    Event Horizon
+                </h3>
+
+                <p>
+
+                    The invisible boundary where
+                    escape velocity exceeds the
+                    speed of light.
+
+                </p>
+
+            </div>
+
+            <div class="fact-card">
+
+                <h3>
+                    Singularity
+                </h3>
+
+                <p>
+
+                    Theoretical infinitely dense
+                    point hidden at the center
+                    of a black hole.
+
+                </p>
+
+            </div>
+
+            <div class="fact-card">
+
+                <h3>
+                    Hawking Radiation
+                </h3>
+
+                <p>
+
+                    Quantum effects may cause
+                    black holes to slowly evaporate
+                    over immense timescales.
+
+                </p>
+
+            </div>
+
+            <div class="fact-card">
+
+                <h3>
+                    Time Dilation
+                </h3>
+
+                <p>
+
+                    Time passes significantly slower
+                    near strong gravitational fields.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="science-panel">
+
+            <h2>
+
+                Modern Black Hole Research
+
+            </h2>
+
+            <p>
+
+                Black holes are now directly observed
+                through gravitational waves, stellar
+                motion measurements, radio astronomy,
+                and Event Horizon Telescope imaging.
+                These observations continue to test
+                Einstein's General Relativity and
+                expand our understanding of the universe.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         MODAL
+    =========================================== -->
+
+    <div
+        class="modal"
+        id="blackholeModal"
+    >
+
+        <div class="modal-content">
+
+            <span
+                id="closeBlackholeModal"
+            >
+                &times;
+            </span>
+
+            <div
+                id="blackholeModalBody"
+            >
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <h2>
+
+            GalaxyVerse
+
+        </h2>
+
+        <p>
+
+            Explore galaxies, planets,
+            black holes, constellations,
+            cosmic timelines and the
+            wonders of the observable universe.
+
+        </p>
+
+    </footer>
+
+    <!-- ==========================================
+         SCRIPTS
+    =========================================== -->
+
+    <script src="../js/blackhole.js"></script>
+
+</body>
+
+</html>

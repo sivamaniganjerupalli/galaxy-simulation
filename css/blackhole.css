@@ -1,0 +1,2671 @@
+/* ==========================================
+   GALAXYVERSE 2.0
+   NASA GRADE BLACK HOLE LAB
+   PART 1
+   FOUNDATION + HERO
+========================================== */
+
+/* ==========================================
+   PAGE FOUNDATION
+========================================== */
+
+html,
+body{
+
+    width:100%;
+
+    min-height:100%;
+
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   COSMIC BACKGROUND
+========================================== */
+
+body{
+
+    position:relative;
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-5;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(139,92,246,.12),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(56,189,248,.10),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(255,120,0,.08),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            180deg,
+            #02040c 0%,
+            #050816 35%,
+            #060b1d 70%,
+            #03050d 100%
+        );
+}
+
+/* ==========================================
+   DEEP SPACE DUST
+========================================== */
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-4;
+
+    background:
+
+        radial-gradient(
+            circle at 30% 40%,
+            rgba(255,255,255,.03),
+            transparent 15%
+        ),
+
+        radial-gradient(
+            circle at 70% 60%,
+            rgba(255,255,255,.03),
+            transparent 15%
+        ),
+
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(255,255,255,.02),
+            transparent 10%
+        );
+
+    filter:
+        blur(40px);
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.blackhole-hero{
+
+    position:relative;
+
+    padding:
+
+        140px
+        8%
+        20px;
+
+    display:grid;
+
+    grid-template-columns:
+
+        1fr
+        1fr;
+
+    gap:2rem;
+
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* ==========================================
+   HERO GLOW
+========================================== */
+
+.blackhole-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+    height:900px;
+
+    left:-250px;
+    top:-250px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(139,92,246,.12),
+            transparent 70%
+        );
+
+    filter:
+        blur(80px);
+
+    pointer-events:none;
+}
+
+.blackhole-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    right:-250px;
+    bottom:-250px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,120,0,.10),
+            transparent 70%
+        );
+
+    filter:
+        blur(80px);
+
+    pointer-events:none;
+}
+
+/* ==========================================
+   HERO CONTENT
+========================================== */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:20;
+}
+
+/* ==========================================
+   MISSION BADGE
+========================================== */
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.7rem;
+
+    padding:
+
+        .9rem
+        1.4rem;
+
+    border-radius:999px;
+
+    margin-bottom:2rem;
+
+    color:#ffb74d;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    background:
+
+        rgba(255,140,0,.08);
+
+    border:
+
+        1px solid
+        rgba(255,140,0,.18);
+
+    backdrop-filter:
+        blur(12px);
+}
+
+/* ==========================================
+   HERO TITLE
+========================================== */
+
+.hero-content h1{
+
+    font-size:
+
+        clamp(
+            3.5rem,
+            8vw,
+            6.5rem
+        );
+
+    line-height:1;
+
+    margin-bottom:2rem;
+
+    font-weight:900;
+
+    letter-spacing:-2px;
+}
+
+.hero-content .gradient-text{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ffb74d,
+            #ff6f00,
+            #ff3d00
+        );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:
+        transparent;
+}
+
+/* ==========================================
+   HERO DESCRIPTION
+========================================== */
+
+.hero-content p{
+
+    max-width:700px;
+
+    font-size:1.15rem;
+
+    line-height:2;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .72
+        );
+
+    margin-bottom:2.5rem;
+}
+
+/* ==========================================
+   HERO ACTIONS
+========================================== */
+
+.hero-actions{
+
+    display:flex;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+}
+
+.hero-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:180px;
+
+    height:58px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s ease;
+}
+
+.hero-btn.primary{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ff9800,
+            #ff5722
+        );
+
+    color:white;
+
+    box-shadow:
+
+        0 15px 35px
+        rgba(255,120,0,.25);
+}
+
+.hero-btn.primary:hover{
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+
+        0 25px 45px
+        rgba(255,120,0,.35);
+}
+
+.hero-btn.secondary{
+
+    color:white;
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.10);
+
+    background:
+
+        rgba(255,255,255,.04);
+
+    backdrop-filter:
+        blur(15px);
+}
+
+.hero-btn.secondary:hover{
+
+    border-color:
+        rgba(255,140,0,.35);
+
+    transform:
+        translateY(-4px);
+}
+
+/* ==========================================
+   RESPONSIVE HERO
+========================================== */
+
+@media(max-width:992px){
+
+    .blackhole-hero{
+
+        grid-template-columns:
+            1fr;
+
+        text-align:center;
+
+        gap:2rem;
+    }
+
+    .hero-actions{
+
+        justify-content:center;
+    }
+
+    .hero-content p{
+
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+/* ==========================================
+   GALAXYVERSE 2.0
+   NASA GRADE BLACK HOLE LAB
+   PART 2
+   BLACK HOLE ANIMATION SYSTEM
+========================================== */
+
+/* ==========================================
+   BLACK HOLE OBSERVATORY
+========================================== */
+
+.blackhole-animation{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:400px;
+
+    min-height:auto;
+
+    overflow:hidden;
+
+    isolation:isolate;
+}
+
+/* ==========================================
+   SPACE DISTORTION FIELD
+========================================== */
+
+.blackhole-animation::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+    height:900px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,120,0,.12) 0%,
+            rgba(255,80,0,.08) 25%,
+            rgba(255,40,0,.04) 45%,
+            transparent 70%
+        );
+
+    filter:blur(50px);
+
+    animation:
+
+        distortionPulse
+        10s
+        ease-in-out
+        infinite;
+
+    z-index:0;
+}
+
+/* ==========================================
+   OUTER GRAVITY WELL
+========================================== */
+
+.blackhole-animation::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.04);
+
+    animation:
+
+        gravityWave
+        14s
+        linear
+        infinite;
+
+    z-index:1;
+}
+
+/* ==========================================
+   EVENT HORIZON
+========================================== */
+
+.blackhole-core{
+
+    position:absolute;
+
+    width:280px;
+    height:280px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            #000000 0%,
+            #010101 60%,
+            #000000 100%
+        );
+
+    z-index:50;
+
+    box-shadow:
+
+        0 0 120px rgba(0,0,0,.95),
+
+        0 0 220px rgba(0,0,0,.95),
+
+        0 0 400px rgba(0,0,0,.9);
+}
+
+/* ==========================================
+   PHOTON SPHERE
+========================================== */
+
+.blackhole-core::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-16px;
+
+    border-radius:50%;
+
+    border:
+
+        4px solid
+        rgba(255,220,150,.45);
+
+    box-shadow:
+
+        0 0 20px rgba(255,200,100,.55),
+
+        0 0 45px rgba(255,180,0,.35);
+
+    animation:
+
+        photonPulse
+        4s
+        ease-in-out
+        infinite;
+}
+
+/* ==========================================
+   LIGHT BENDING RING
+========================================== */
+
+.blackhole-core::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-45px;
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.08);
+
+    filter:blur(8px);
+
+    animation:
+
+        lensingRotate
+        12s
+        linear
+        infinite;
+}
+
+/* ==========================================
+   ACCRETION DISK
+========================================== */
+
+.accretion-ring{
+
+    position:absolute;
+
+    width:650px;
+    height:160px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            ellipse at center,
+
+            transparent 38%,
+
+            rgba(255,255,255,.95) 43%,
+
+            #fff3c4 47%,
+
+            #ffd54f 52%,
+
+            #ffb300 58%,
+
+            #ff8f00 64%,
+
+            #ff6f00 70%,
+
+            rgba(255,80,0,.75) 76%,
+
+            transparent 82%
+        );
+
+    filter:
+
+        blur(2px);
+
+    z-index:15;
+
+    animation:
+
+        diskRotation
+        12s
+        linear
+        infinite;
+
+    box-shadow:
+
+        0 0 35px rgba(255,180,0,.8),
+
+        0 0 80px rgba(255,120,0,.55),
+
+        0 0 180px rgba(255,80,0,.35);
+}
+
+/* ==========================================
+   HOT INNER PLASMA
+========================================== */
+
+.accretion-ring::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:500px;
+    height:90px;
+
+    transform:
+
+        translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            ellipse,
+            rgba(255,255,255,.95),
+            rgba(255,220,120,.45),
+            transparent 80%
+        );
+
+    filter:blur(14px);
+}
+
+/* ==========================================
+   RELATIVISTIC JETS
+========================================== */
+
+.accretion-ring::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:16px;
+    height:650px;
+
+    transform:
+
+        translate(-50%,-50%);
+
+    background:
+
+        linear-gradient(
+            to top,
+
+            transparent,
+
+            rgba(120,220,255,.75),
+
+            rgba(255,255,255,.95),
+
+            rgba(120,220,255,.75),
+
+            transparent
+        );
+
+    filter:
+
+        blur(10px);
+
+    opacity:.7;
+
+    z-index:-1;
+}
+
+/* ==========================================
+   GRAVITATIONAL LENSING HALO
+========================================== */
+
+.lensing-halo{
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    border:
+
+        2px solid
+        rgba(255,255,255,.04);
+
+    animation:
+
+        lensingRotate
+        20s
+        linear
+        infinite;
+}
+
+/* ==========================================
+   CINEMATIC ORBIT RINGS
+========================================== */
+
+.orbit-ring{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.05);
+}
+
+.orbit-ring.ring-1{
+
+    width:420px;
+    height:420px;
+
+    animation:
+
+        rotateClockwise
+        16s
+        linear
+        infinite;
+}
+
+.orbit-ring.ring-2{
+
+    width:520px;
+    height:520px;
+
+    animation:
+
+        rotateCounter
+        22s
+        linear
+        infinite;
+}
+
+.orbit-ring.ring-3{
+
+    width:640px;
+    height:640px;
+
+    animation:
+
+        rotateClockwise
+        28s
+        linear
+        infinite;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes diskRotation{
+
+    from{
+
+        transform:rotate(0deg);
+    }
+
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes photonPulse{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.7;
+    }
+
+    50%{
+
+        transform:scale(1.06);
+
+        opacity:1;
+    }
+}
+
+@keyframes distortionPulse{
+
+    0%,100%{
+
+        transform:scale(1);
+    }
+
+    50%{
+
+        transform:scale(1.08);
+    }
+}
+
+@keyframes gravityWave{
+
+    from{
+
+        transform:scale(.9);
+
+        opacity:.25;
+    }
+
+    to{
+
+        transform:scale(1.15);
+
+        opacity:.05;
+    }
+}
+
+@keyframes lensingRotate{
+
+    from{
+
+        transform:rotate(0deg);
+    }
+
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes rotateClockwise{
+
+    from{
+
+        transform:rotate(0deg);
+    }
+
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes rotateCounter{
+
+    from{
+
+        transform:rotate(360deg);
+    }
+
+    to{
+
+        transform:rotate(0deg);
+    }
+}
+
+/* ==========================================
+   RESPONSIVE ANIMATION
+========================================== */
+
+@media(max-width:768px){
+
+    .blackhole-animation{
+
+        min-height:420px;
+    }
+
+    .accretion-ring{
+
+        width:320px;
+        height:90px;
+    }
+
+    .blackhole-core{
+
+        width:150px;
+        height:150px;
+    }
+
+    .accretion-ring::after{
+
+        height:320px;
+    }
+}
+/* ==========================================
+   GALAXYVERSE 2.0
+   NASA GRADE BLACK HOLE LAB
+   PART 3
+   STATS • SEARCH • GRID • CARDS
+========================================== */
+
+/* ==========================================
+   STATISTICS SECTION
+========================================== */
+
+.stats-section{
+
+    position:relative;
+
+    padding:
+        0rem 8%
+        4rem;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(260px,1fr)
+        );
+
+    gap:2rem;
+}
+
+.stat-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:2rem;
+
+    text-align:center;
+
+    border-radius:28px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.06),
+            rgba(255,255,255,.03)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:
+        blur(18px);
+
+    transition:
+        .4s ease;
+}
+
+.stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    top:-90px;
+    right:-90px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,140,0,.18),
+            transparent
+        );
+}
+
+.stat-card:hover{
+
+    transform:
+        translateY(-12px);
+
+    border-color:
+        rgba(255,140,0,.35);
+
+    box-shadow:
+
+        0 20px 40px
+        rgba(0,0,0,.35),
+
+        0 0 30px
+        rgba(255,140,0,.15);
+}
+
+.stat-card h2{
+
+    position:relative;
+
+    color:#ffb74d;
+
+    font-size:2.2rem;
+
+    margin-bottom:.8rem;
+}
+
+.stat-card p{
+
+    position:relative;
+
+    color:
+        var(--text-secondary);
+
+    line-height:1.7;
+}
+
+/* ==========================================
+   SEARCH SECTION
+========================================== */
+
+.controls-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:
+        1rem 8%
+        5rem;
+}
+
+.controls-section input{
+
+    width:min(700px,100%);
+
+    height:70px;
+
+    padding:
+        0 2rem;
+
+    border-radius:999px;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    background:
+        rgba(255,255,255,.04);
+
+    backdrop-filter:
+        blur(20px);
+
+    color:white;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:.35s ease;
+}
+
+.controls-section input::placeholder{
+
+    color:
+        rgba(255,255,255,.45);
+}
+
+.controls-section input:focus{
+
+    border-color:
+        rgba(255,140,0,.45);
+
+    box-shadow:
+
+        0 0 0 4px
+        rgba(255,140,0,.08),
+
+        0 0 40px
+        rgba(255,140,0,.15);
+}
+
+/* ==========================================
+   BLACK HOLE GRID
+========================================== */
+
+.blackhole-grid{
+
+    position:relative;
+
+    padding:
+        2rem 8%
+        8rem;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(380px,1fr)
+        );
+
+    gap:2rem;
+}
+
+/* ==========================================
+   BLACK HOLE CARD
+========================================== */
+
+.blackhole-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(8,15,30,.95),
+            rgba(4,8,20,.95)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:
+        blur(18px);
+
+    transition:
+        .45s ease;
+
+    cursor:pointer;
+}
+
+.blackhole-card:hover{
+
+    transform:
+        translateY(-14px);
+
+    border-color:
+        rgba(255,140,0,.35);
+
+    box-shadow:
+
+        0 25px 60px
+        rgba(0,0,0,.45),
+
+        0 0 40px
+        rgba(255,140,0,.15);
+}
+
+/* ==========================================
+   CARD GLOW
+========================================== */
+
+.blackhole-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    top:-120px;
+    right:-120px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,140,0,.15),
+            transparent
+        );
+
+    opacity:0;
+
+    transition:.4s ease;
+}
+
+.blackhole-card:hover::before{
+
+    opacity:1;
+}
+
+/* ==========================================
+   CARD IMAGE
+========================================== */
+
+.blackhole-image{
+
+    position:relative;
+
+    width:100%;
+
+    height:320px;
+
+    overflow:hidden;
+
+    background:#000;
+}
+
+.blackhole-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+        transform .8s ease;
+}
+
+.blackhole-card:hover
+.blackhole-image img{
+
+    transform:
+        scale(1.08);
+}
+
+/* ==========================================
+   IMAGE OVERLAY
+========================================== */
+
+.blackhole-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.85),
+            rgba(0,0,0,.2),
+            transparent
+        );
+
+    z-index:1;
+}
+
+.blackhole-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    left:50%;
+    top:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:#000;
+
+    box-shadow:
+
+        0 0 25px rgba(0,0,0,.9),
+
+        0 0 80px rgba(0,0,0,.95);
+
+    z-index:2;
+}
+
+/* ==========================================
+   CARD CONTENT
+========================================== */
+
+.blackhole-content{
+
+    padding:2rem;
+}
+
+.blackhole-content h3{
+
+    color:white;
+
+    font-size:1.8rem;
+
+    margin-bottom:1rem;
+}
+
+.blackhole-content p{
+
+    color:#b7c5df;
+
+    line-height:1.9;
+
+    margin-bottom:1rem;
+}
+
+/* ==========================================
+   BLACK HOLE META
+========================================== */
+
+.blackhole-meta{
+
+    display:grid;
+
+    gap:.8rem;
+
+    margin:
+        1.5rem 0;
+}
+
+.blackhole-meta span{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:white;
+
+    font-size:.95rem;
+}
+
+.blackhole-meta strong{
+
+    color:#ffb74d;
+}
+
+/* ==========================================
+   EXPLORE BUTTON
+========================================== */
+
+.blackhole-btn{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ff9800,
+            #ff5722
+        );
+
+    transition:.35s ease;
+}
+
+.blackhole-btn:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+
+        0 12px 25px
+        rgba(255,120,0,.25);
+}
+
+/* ==========================================
+   RESPONSIVE GRID
+========================================== */
+
+@media(max-width:992px){
+
+    .blackhole-grid{
+
+        grid-template-columns:
+            repeat(
+                auto-fit,
+                minmax(320px,1fr)
+            );
+    }
+}
+
+@media(max-width:768px){
+
+    .blackhole-grid{
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .blackhole-image{
+
+        height:260px;
+    }
+
+    .controls-section input{
+
+        height:60px;
+
+        padding:
+            0 1.2rem;
+    }
+}
+/* ==========================================
+   GALAXYVERSE 2.0
+   NASA GRADE BLACK HOLE LAB
+   PART 4
+   SIMULATION • FACTS • SCIENCE PANELS
+========================================== */
+
+/* ==========================================
+   SIMULATION SECTION
+========================================== */
+
+.simulation-section{
+
+    position:relative;
+
+    padding:
+        8rem 8%;
+
+    overflow:hidden;
+}
+
+.simulation-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:800px;
+    height:800px;
+
+    left:-300px;
+    top:-300px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,140,0,.08),
+            transparent 70%
+        );
+
+    filter:blur(80px);
+
+    pointer-events:none;
+}
+
+.simulation-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    right:-250px;
+    bottom:-250px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(56,189,248,.08),
+            transparent 70%
+        );
+
+    filter:blur(80px);
+
+    pointer-events:none;
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    font-size:
+
+        clamp(
+            2.5rem,
+            5vw,
+            4rem
+        );
+
+    margin-bottom:4rem;
+}
+
+/* ==========================================
+   SIMULATION CARD
+========================================== */
+
+.simulation-card{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:4rem;
+
+    align-items:center;
+
+    padding:4rem;
+
+    border-radius:36px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.05),
+            rgba(255,255,255,.03)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:
+        blur(20px);
+
+    overflow:hidden;
+}
+
+.simulation-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    right:-100px;
+    top:-100px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,140,0,.15),
+            transparent
+        );
+}
+
+/* ==========================================
+   SIMULATION VISUAL
+========================================== */
+
+.simulation-hole{
+
+    position:relative;
+
+    min-height:400px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+/* ==========================================
+   SIMULATION CORE
+========================================== */
+
+.simulation-core{
+
+    position:absolute;
+
+    width:150px;
+    height:150px;
+
+    border-radius:50%;
+
+    background:#000;
+
+    z-index:20;
+
+    box-shadow:
+
+        0 0 50px rgba(0,0,0,.95),
+
+        0 0 120px rgba(0,0,0,.95),
+
+        0 0 220px rgba(0,0,0,.85);
+}
+
+/* ==========================================
+   SIMULATION RING
+========================================== */
+
+.simulation-ring{
+
+    position:absolute;
+
+    width:320px;
+    height:110px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            ellipse,
+            transparent 35%,
+            rgba(255,255,255,.95) 42%,
+            #ffd54f 48%,
+            #ff9800 58%,
+            #ff5722 68%,
+            transparent 78%
+        );
+
+    animation:
+
+        simulationSpin
+        8s
+        linear
+        infinite;
+
+    filter:blur(1px);
+
+    box-shadow:
+
+        0 0 25px rgba(255,140,0,.65),
+
+        0 0 70px rgba(255,120,0,.35);
+}
+
+/* ==========================================
+   SPACE-TIME GRID
+========================================== */
+
+.simulation-hole::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    border:
+
+        1px solid rgba(255,255,255,.06);
+
+    animation:
+
+        pulseGrid
+        10s
+        ease-in-out
+        infinite;
+}
+
+.simulation-hole::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    border-radius:50%;
+
+    border:
+
+        1px solid rgba(255,255,255,.03);
+
+    animation:
+
+        pulseGrid
+        14s
+        ease-in-out
+        infinite;
+}
+
+/* ==========================================
+   SIMULATION CONTENT
+========================================== */
+
+.simulation-content{
+
+    position:relative;
+
+    z-index:10;
+}
+
+.simulation-content h3{
+
+    font-size:2.2rem;
+
+    color:#ffb74d;
+
+    margin-bottom:1.5rem;
+}
+
+.simulation-content p{
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .72
+        );
+
+    line-height:2;
+
+    margin-bottom:1.2rem;
+}
+
+/* ==========================================
+   SCIENCE HIGHLIGHTS
+========================================== */
+
+.science-points{
+
+    margin-top:2rem;
+
+    display:grid;
+
+    gap:1rem;
+}
+
+.science-point{
+
+    padding:1rem 1.2rem;
+
+    border-radius:18px;
+
+    background:
+
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    color:white;
+}
+
+/* ==========================================
+   FACTS SECTION
+========================================== */
+
+.facts-section{
+
+    position:relative;
+
+    padding:
+        8rem 8%;
+}
+
+.facts-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px,1fr)
+        );
+
+    gap:2rem;
+
+    margin-top:4rem;
+}
+
+/* ==========================================
+   FACT CARD
+========================================== */
+
+.fact-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:2rem;
+
+    border-radius:28px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.05),
+            rgba(255,255,255,.03)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:
+        blur(16px);
+
+    transition:.4s ease;
+}
+
+.fact-card:hover{
+
+    transform:
+        translateY(-12px);
+
+    border-color:
+        rgba(255,140,0,.35);
+
+    box-shadow:
+
+        0 20px 40px
+        rgba(255,140,0,.10);
+}
+
+.fact-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    left:-90px;
+    bottom:-90px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,140,0,.18),
+            transparent
+        );
+}
+
+.fact-card h3{
+
+    position:relative;
+
+    color:#ffb74d;
+
+    margin-bottom:1rem;
+
+    font-size:1.4rem;
+}
+
+.fact-card p{
+
+    position:relative;
+
+    color:
+        var(--text-secondary);
+
+    line-height:1.9;
+}
+
+/* ==========================================
+   SCIENCE PANEL
+========================================== */
+
+.science-panel{
+
+    margin-top:5rem;
+
+    padding:3rem;
+
+    border-radius:32px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,140,0,.05),
+            rgba(56,189,248,.05)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:
+        blur(20px);
+}
+
+.science-panel h2{
+
+    font-size:2rem;
+
+    margin-bottom:1.5rem;
+
+    color:white;
+}
+
+.science-panel p{
+
+    color:
+        var(--text-secondary);
+
+    line-height:2;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes simulationSpin{
+
+    from{
+
+        transform:rotate(0deg);
+    }
+
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes pulseGrid{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.2;
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        opacity:.5;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .simulation-card{
+
+        grid-template-columns:
+            1fr;
+
+        gap:2rem;
+    }
+
+    .simulation-content{
+
+        text-align:center;
+    }
+}
+
+@media(max-width:768px){
+
+    .simulation-card{
+
+        padding:2rem;
+    }
+
+    .simulation-hole{
+
+        min-height:280px;
+    }
+
+    .simulation-ring{
+
+        width:240px;
+        height:80px;
+    }
+
+    .simulation-core{
+
+        width:110px;
+        height:110px;
+    }
+
+    .science-panel{
+
+        padding:2rem;
+    }
+}
+/* ==========================================
+   GALAXYVERSE 2.0
+   NASA GRADE BLACK HOLE LAB
+   PART 5
+   MODAL • FOOTER • RESPONSIVE
+========================================== */
+
+/* ==========================================
+   MODAL OVERLAY
+========================================== */
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:2rem;
+
+    background:
+        rgba(0,0,0,.88);
+
+    backdrop-filter:
+        blur(16px);
+
+    z-index:99999;
+
+    opacity:0;
+
+    transition:
+        opacity .35s ease;
+}
+
+/* ==========================================
+   MODAL CONTENT
+========================================== */
+
+.modal-content{
+
+    position:relative;
+
+    width:min(1200px,100%);
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    border-radius:32px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(8,15,30,.98),
+            rgba(3,6,16,.98)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 30px 60px rgba(0,0,0,.55),
+
+        0 0 60px rgba(255,140,0,.08);
+
+    padding:2rem;
+}
+
+/* ==========================================
+   CLOSE BUTTON
+========================================== */
+
+#closeBlackholeModal{
+
+    position:absolute;
+
+    top:20px;
+    right:20px;
+
+    width:52px;
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,.05);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    z-index:100;
+}
+
+#closeBlackholeModal:hover{
+
+    background:
+        rgba(255,80,0,.15);
+
+    border-color:
+        rgba(255,120,0,.45);
+
+    transform:
+        rotate(90deg);
+}
+
+/* ==========================================
+   MODAL LAYOUT
+========================================== */
+
+.modal-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:3rem;
+
+    align-items:center;
+}
+
+/* ==========================================
+   MODAL IMAGE
+========================================== */
+
+.modal-image{
+
+    width:100%;
+
+    min-height:450px;
+
+    object-fit:cover;
+
+    border-radius:28px;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 20px 40px rgba(0,0,0,.4);
+}
+
+/* ==========================================
+   MODAL DETAILS
+========================================== */
+
+.modal-details h2{
+
+    font-size:
+
+        clamp(
+            2.5rem,
+            5vw,
+            4rem
+        );
+
+    line-height:1.1;
+
+    margin-bottom:1rem;
+
+    color:white;
+}
+
+.modal-type{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:
+
+        .8rem
+        1.3rem;
+
+    border-radius:999px;
+
+    margin-bottom:2rem;
+
+    color:#ffb74d;
+
+    background:
+        rgba(255,140,0,.10);
+
+    border:
+        1px solid rgba(255,140,0,.25);
+
+    font-weight:600;
+}
+
+.modal-details p{
+
+    color:
+        var(--text-secondary);
+
+    line-height:2;
+}
+
+/* ==========================================
+   INFORMATION GRID
+========================================== */
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap:1rem;
+
+    margin:
+        2rem 0;
+}
+
+.info-card{
+
+    padding:1.2rem;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid rgba(255,255,255,.06);
+
+    transition:.35s ease;
+}
+
+.info-card:hover{
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(255,140,0,.25);
+}
+
+.info-card span{
+
+    display:block;
+
+    color:#94a3b8;
+
+    margin-bottom:.4rem;
+
+    font-size:.85rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+}
+
+.info-card strong{
+
+    color:white;
+
+    font-size:1rem;
+}
+
+/* ==========================================
+   FACT HIGHLIGHT
+========================================== */
+
+.fact-highlight{
+
+    margin-top:2rem;
+
+    padding:1.8rem;
+
+    border-radius:24px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,140,0,.08),
+            rgba(255,80,0,.08)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.08);
+}
+
+.fact-highlight h4{
+
+    color:white;
+
+    margin-bottom:1rem;
+
+    font-size:1.2rem;
+}
+
+.fact-highlight p{
+
+    margin:0;
+}
+
+/* ==========================================
+   DESCRIPTION BOX
+========================================== */
+
+.description{
+
+    margin-top:1rem;
+
+    padding:1.5rem;
+
+    border-radius:22px;
+
+    background:
+        rgba(255,255,255,.03);
+
+    border:
+        1px solid rgba(255,255,255,.06);
+}
+
+.description p{
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    line-height:2;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    position:relative;
+
+    text-align:center;
+
+    padding:
+        5rem 8%;
+
+    border-top:
+        1px solid rgba(255,255,255,.08);
+
+    overflow:hidden;
+}
+
+footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:-220px;
+
+    width:500px;
+    height:500px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,140,0,.08),
+            transparent 70%
+        );
+
+    filter:
+        blur(60px);
+}
+
+footer h2{
+
+    position:relative;
+
+    font-size:2.5rem;
+
+    margin-bottom:1rem;
+
+    color:white;
+}
+
+footer p{
+
+    position:relative;
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:
+        var(--text-secondary);
+
+    line-height:2;
+}
+
+/* ==========================================
+   CUSTOM SCROLLBAR
+========================================== */
+
+.modal-content::-webkit-scrollbar{
+
+    width:10px;
+}
+
+.modal-content::-webkit-scrollbar-track{
+
+    background:
+        rgba(255,255,255,.03);
+}
+
+.modal-content::-webkit-scrollbar-thumb{
+
+    background:
+
+        linear-gradient(
+            #ff9800,
+            #ff5722
+        );
+
+    border-radius:999px;
+}
+
+/* ==========================================
+   RESPONSIVE 1200px
+========================================== */
+
+@media(max-width:1200px){
+
+    .modal-grid{
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .modal-image{
+
+        min-height:350px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE 768px
+========================================== */
+
+@media(max-width:768px){
+
+    .modal{
+
+        padding:1rem;
+    }
+
+    .modal-content{
+
+        padding:1.5rem;
+
+        border-radius:24px;
+    }
+
+    .info-grid{
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .modal-details h2{
+
+        font-size:2rem;
+    }
+
+    footer{
+
+        padding:
+            4rem 6%;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE 576px
+========================================== */
+
+@media(max-width:576px){
+
+    #closeBlackholeModal{
+
+        width:42px;
+        height:42px;
+
+        font-size:1.5rem;
+    }
+
+    .fact-highlight{
+
+        padding:1.3rem;
+    }
+
+    .description{
+
+        padding:1.2rem;
+    }
+}
+/* ==========================================
+   HERO SPACING FIX
+========================================== */
+
+.blackhole-hero{
+
+    padding-top:140px !important;
+
+    padding-bottom:1rem !important;
+
+    min-height:auto !important;
+}
+
+.blackhole-animation{
+
+    height:350px !important;
+
+    min-height:350px !important;
+}
+
+.stats-section{
+
+    padding-top:1rem !important;
+
+    margin-top:0 !important;
+}
+#blackhole-starfield{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    overflow:hidden;
+}
+
+.blackhole-star{
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:50%;
+
+    animation:
+        starTwinkle
+        var(--twinkle)
+        ease-in-out infinite;
+}
+/* ==========================================
+   END OF BLACKHOLE.CSS
+========================================== */

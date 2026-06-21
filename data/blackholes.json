@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Sagittarius A*",
+    "type": "Supermassive Black Hole",
+    "mass": "4.3 Million Solar Masses",
+    "distance": "26,000 Light Years",
+    "diameter": "44 Million km",
+    "discovered": "1974",
+    "image": "../assets/images/Sagittarius-A.jpg",
+    "description": "Sagittarius A* is the supermassive black hole located at the center of the Milky Way galaxy. It contains approximately 4.3 million times the mass of our Sun and governs the motion of stars near the galactic core."
+  },
+  {
+    "id": 2,
+    "name": "M87*",
+    "type": "Supermassive Black Hole",
+    "mass": "6.5 Billion Solar Masses",
+    "distance": "53 Million Light Years",
+    "diameter": "38 Billion km",
+    "discovered": "1918",
+    "image": "../assets/images/m87hole.jpg",
+    "description": "M87* became famous in 2019 when astronomers released the first-ever image of a black hole. It resides in the center of the Messier 87 galaxy and is one of the most massive black holes known."
+  },
+  {
+    "id": 3,
+    "name": "TON 618",
+    "type": "Ultramassive Black Hole",
+    "mass": "66 Billion Solar Masses",
+    "distance": "10.4 Billion Light Years",
+    "diameter": "390 Billion km",
+    "discovered": "1957",
+    "image": "../assets/images/ton618.jpg",
+    "description": "TON 618 is one of the largest and most massive black holes ever discovered. Its immense mass makes it an ultramassive black hole far exceeding the size of typical supermassive black holes."
+  },
+  {
+    "id": 4,
+    "name": "Cygnus X-1",
+    "type": "Stellar Black Hole",
+    "mass": "21 Solar Masses",
+    "distance": "6,070 Light Years",
+    "diameter": "124 km",
+    "discovered": "1964",
+    "image": "../assets/images/cygnusX-1.jpg",
+    "description": "Cygnus X-1 was among the first widely accepted black hole candidates. It formed from the collapse of a massive star and is located in the Cygnus constellation."
+  },
+  {
+    "id": 5,
+    "name": "Gaia BH1",
+    "type": "Stellar Black Hole",
+    "mass": "10 Solar Masses",
+    "distance": "1,560 Light Years",
+    "diameter": "60 km",
+    "discovered": "2022",
+    "image": "../assets/images/gaiabh1.jpg",
+    "description": "Gaia BH1 is currently one of the closest known black holes to Earth. It was discovered using data from the Gaia space observatory."
+  },
+  {
+    "id": 6,
+    "name": "Phoenix A",
+    "type": "Supermassive Black Hole",
+    "mass": "100 Billion Solar Masses",
+    "distance": "5.8 Billion Light Years",
+    "diameter": "590 Billion km",
+    "discovered": "2012",
+    "image": "../assets/images/phoenixa.jpg",
+    "description": "Phoenix A is considered one of the most massive black holes ever identified. It lies at the center of the Phoenix Cluster and powers intense galactic activity."
+  },
+  {
+    "id": 7,
+    "name": "NGC 4889",
+    "type": "Supermassive Black Hole",
+    "mass": "21 Billion Solar Masses",
+    "distance": "308 Million Light Years",
+    "diameter": "130 Billion km",
+    "discovered": "1785",
+    "image": "../assets/images/ngc4889.jpg",
+    "description": "NGC 4889 hosts one of the largest known black holes in the observable universe. It resides in a giant elliptical galaxy within the Coma Cluster."
+  },
+  {
+    "id": 8,
+    "name": "Holmberg 15A",
+    "type": "Ultramassive Black Hole",
+    "mass": "40 Billion Solar Masses",
+    "distance": "700 Million Light Years",
+    "diameter": "236 Billion km",
+    "discovered": "2019",
+    "image": "../assets/images/holmberg15a.jpg",
+    "description": "Holmberg 15A contains an enormous black hole at its center. Its mass places it among the largest black holes discovered in nearby galaxy clusters."
+  }
+]

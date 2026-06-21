@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Milky Way",
+    "type": "Barred Spiral Galaxy",
+    "diameter": "100,000 Light Years",
+    "distance": "0 Light Years",
+    "stars": "200 Billion",
+    "age": "13.6 Billion Years",
+    "description": "The Milky Way is the galaxy that contains our Solar System and is home to billions of stars, planets, and nebulae.",
+    "image": "../assets/images/milky-way.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Andromeda",
+    "type": "Spiral Galaxy",
+    "diameter": "220,000 Light Years",
+    "distance": "2.5 Million Light Years",
+    "stars": "1 Trillion",
+    "age": "10 Billion Years",
+    "description": "The Andromeda Galaxy is the nearest major galaxy to the Milky Way and is expected to collide with it in about 4.5 billion years.",
+    "image": "../assets/images/andromeda.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Whirlpool Galaxy",
+    "type": "Spiral Galaxy",
+    "diameter": "76,000 Light Years",
+    "distance": "31 Million Light Years",
+    "stars": "160 Billion",
+    "age": "8 Billion Years",
+    "description": "The Whirlpool Galaxy is famous for its beautiful spiral structure and active star formation regions.",
+    "image": "../assets/images/whirlpool.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sombrero Galaxy",
+    "type": "Unbarred Spiral Galaxy",
+    "diameter": "50,000 Light Years",
+    "distance": "31 Million Light Years",
+    "stars": "800 Billion",
+    "age": "13 Billion Years",
+    "description": "The Sombrero Galaxy is known for its bright central bulge and prominent dust lane, giving it the appearance of a sombrero hat.",
+    "image": "../assets/images/sombrero.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Triangulum Galaxy",
+    "type": "Spiral Galaxy",
+    "diameter": "60,000 Light Years",
+    "distance": "2.7 Million Light Years",
+    "stars": "40 Billion",
+    "age": "12 Billion Years",
+    "description": "The Triangulum Galaxy is the third-largest member of the Local Group after the Milky Way and Andromeda.",
+    "image": "../assets/images/triangulum.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Messier 87",
+    "type": "Elliptical Galaxy",
+    "diameter": "240,000 Light Years",
+    "distance": "53 Million Light Years",
+    "stars": "1 Trillion",
+    "age": "13 Billion Years",
+    "description": "Messier 87 contains one of the largest known supermassive black holes and was the first black hole ever photographed.",
+    "image": "../assets/images/m87.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Large Magellanic Cloud",
+    "type": "Irregular Galaxy",
+    "diameter": "14,000 Light Years",
+    "distance": "163,000 Light Years",
+    "stars": "30 Billion",
+    "age": "13 Billion Years",
+    "description": "The Large Magellanic Cloud is a satellite galaxy of the Milky Way and contains active star-forming regions.",
+    "image": "../assets/images/lmc.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Small Magellanic Cloud",
+    "type": "Dwarf Irregular Galaxy",
+    "diameter": "7,000 Light Years",
+    "distance": "200,000 Light Years",
+    "stars": "3 Billion",
+    "age": "12 Billion Years",
+    "description": "The Small Magellanic Cloud is a nearby dwarf galaxy that interacts gravitationally with both the Milky Way and the Large Magellanic Cloud.",
+    "image": "../assets/images/smc.jpg"
+  }
+]

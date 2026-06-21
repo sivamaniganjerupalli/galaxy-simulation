@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "year": "13.8 Billion Years Ago",
+    "title": "The Big Bang",
+    "category": "Origin",
+    "image": "../assets/images/big-bang.jpg",
+    "description": "The universe began from an extremely hot and dense singularity, expanding rapidly and creating space, time, matter, and energy."
+  },
+  {
+    "id": 2,
+    "year": "13.5 Billion Years Ago",
+    "title": "First Stars Form",
+    "category": "Stars",
+    "image": "../assets/images/first-stars.jpg",
+    "description": "Hydrogen and helium clouds collapsed under gravity, igniting the first stars and bringing light to the universe."
+  },
+  {
+    "id": 3,
+    "year": "13.2 Billion Years Ago",
+    "title": "Milky Way Formation",
+    "category": "Galaxy",
+    "image": "../assets/images/milky-way1.jpg",
+    "description": "The Milky Way galaxy began forming through mergers of smaller galaxies and large clouds of gas."
+  },
+  {
+    "id": 4,
+    "year": "4.6 Billion Years Ago",
+    "title": "Solar System Formation",
+    "category": "Solar System",
+    "image": "../assets/images/solar-system.jpg",
+    "description": "A giant molecular cloud collapsed, forming the Sun and the planets that orbit it today."
+  },
+  {
+    "id": 5,
+    "year": "4.5 Billion Years Ago",
+    "title": "Earth Forms",
+    "category": "Planet",
+    "image": "../assets/images/earth1.jpg",
+    "description": "The Earth formed from dust and rock particles within the protoplanetary disk surrounding the young Sun."
+  },
+  {
+    "id": 6,
+    "year": "4.4 Billion Years Ago",
+    "title": "Moon Formation",
+    "category": "Moon",
+    "image": "../assets/images/moon.jpg",
+    "description": "A Mars-sized object collided with Earth, ejecting debris that eventually formed the Moon."
+  },
+  {
+    "id": 7,
+    "year": "3.8 Billion Years Ago",
+    "title": "First Life Appears",
+    "category": "Life",
+    "image": "../assets/images/life.jpg",
+    "description": "Simple microscopic life emerged in Earth's oceans, marking the beginning of biological evolution."
+  },
+  {
+    "id": 8,
+    "year": "1961",
+    "title": "First Human in Space",
+    "category": "Space Exploration",
+    "image": "../assets/images/yuri-gagarin.jpg",
+    "description": "Yuri Gagarin became the first human to travel into space aboard Vostok 1."
+  },
+  {
+    "id": 9,
+    "year": "1969",
+    "title": "Apollo 11 Moon Landing",
+    "category": "Moon Mission",
+    "image": "../assets/images/apollo11.jpg",
+    "description": "Humans landed on the Moon for the first time as Neil Armstrong and Buzz Aldrin walked on the lunar surface."
+  },
+  {
+    "id": 10,
+    "year": "1990",
+    "title": "Hubble Space Telescope",
+    "category": "Telescope",
+    "image": "../assets/images/hubble.jpg",
+    "description": "The Hubble Space Telescope was launched, revolutionizing astronomy with unprecedented observations."
+  },
+  {
+    "id": 11,
+    "year": "1998",
+    "title": "International Space Station",
+    "category": "Space Station",
+    "image": "../assets/images/iss.jpg",
+    "description": "Construction of the International Space Station began, creating a permanent human presence in orbit."
+  },
+  {
+    "id": 12,
+    "year": "2021",
+    "title": "James Webb Space Telescope",
+    "category": "Telescope",
+    "image": "../assets/images/james-webb.jpg",
+    "description": "The James Webb Space Telescope launched to observe the earliest galaxies and study distant worlds."
+  },
+  {
+    "id": 13,
+    "year": "2035",
+    "title": "Human Mars Missions",
+    "category": "Future",
+    "image": "../assets/images/mars-mission.jpg",
+    "description": "Future missions aim to land humans on Mars and establish a long-term presence on the Red Planet."
+  },
+  {
+    "id": 14,
+    "year": "2100+",
+    "title": "Interstellar Exploration",
+    "category": "Future",
+    "image": "../assets/images/interstellar.jpg",
+    "description": "Advanced spacecraft may travel beyond our solar system to explore nearby star systems."
+  }
+]

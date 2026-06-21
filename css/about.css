@@ -1,0 +1,1777 @@
+/* ==========================================
+   ABOUT HERO
+========================================== */
+
+.about-hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    gap:5rem;
+
+    padding:
+        140px
+        8%
+        100px;
+
+    overflow:hidden;
+
+    background:
+
+        radial-gradient(
+            circle at top,
+            #08101d 0%,
+            #030712 45%,
+            #000000 100%
+        );
+}
+
+/* ==========================================
+   STARFIELD
+========================================== */
+
+#about-starfield{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:1;
+}
+
+.about-star{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:white;
+
+    animation:
+        starTwinkle
+        var(--twinkle)
+        ease-in-out infinite;
+}
+
+@keyframes starTwinkle{
+
+    0%,100%{
+
+        opacity:.15;
+    }
+
+    50%{
+
+        opacity:1;
+    }
+}
+
+/* ==========================================
+   COSMIC OVERLAY
+========================================== */
+
+.about-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+    height:900px;
+
+    top:-300px;
+    left:-250px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(59,130,246,.12),
+            transparent 70%
+        );
+
+    filter:
+        blur(80px);
+
+    animation:
+        nebulaFloat 18s ease-in-out infinite;
+}
+
+.about-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    right:-200px;
+    bottom:-200px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(139,92,246,.15),
+            transparent 70%
+        );
+
+    filter:
+        blur(80px);
+
+    animation:
+        nebulaFloatReverse 24s ease-in-out infinite;
+}
+
+@keyframes nebulaFloat{
+
+    0%,100%{
+
+        transform:
+            translate(0,0);
+    }
+
+    50%{
+
+        transform:
+            translate(50px,-40px);
+    }
+}
+
+@keyframes nebulaFloatReverse{
+
+    0%,100%{
+
+        transform:
+            translate(0,0);
+    }
+
+    50%{
+
+        transform:
+            translate(-50px,40px);
+    }
+}
+
+/* ==========================================
+   HERO CONTENT
+========================================== */
+
+.hero-content{
+
+    position:relative;
+
+    flex:1;
+
+    max-width:700px;
+
+    z-index:10;
+}
+
+.hero-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.5rem;
+
+    padding:
+        12px
+        24px;
+
+    margin-bottom:25px;
+
+    border-radius:999px;
+
+    background:
+
+        rgba(255,255,255,.05);
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.08);
+
+    color:#60a5fa;
+
+    backdrop-filter:
+        blur(20px);
+}
+
+.hero-content h1{
+
+    font-size:
+        clamp(
+            3.5rem,
+            7vw,
+            6rem
+        );
+
+    line-height:1.05;
+
+    margin-bottom:25px;
+
+    font-weight:900;
+}
+
+.gradient-text{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #60a5fa,
+            #8b5cf6,
+            #22d3ee
+        );
+
+    background-size:300% 300%;
+
+    animation:
+        gradientShift 8s ease infinite;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+@keyframes gradientShift{
+
+    0%{
+
+        background-position:0% 50%;
+    }
+
+    50%{
+
+        background-position:100% 50%;
+    }
+
+    100%{
+
+        background-position:0% 50%;
+    }
+}
+
+.hero-content p{
+
+    font-size:1.15rem;
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+    max-width:650px;
+}
+
+.hero-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:
+        18px
+        36px;
+
+    border-radius:999px;
+
+    color:white;
+
+    font-weight:700;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #3b82f6,
+            #8b5cf6
+        );
+
+    box-shadow:
+
+        0 10px 40px
+        rgba(59,130,246,.3);
+
+    transition:.4s ease;
+}
+
+.hero-btn:hover{
+
+    transform:
+        translateY(-6px);
+}
+/* ==========================================
+   HERO VISUAL
+========================================== */
+
+.hero-visual{
+
+    position:relative;
+
+    width:550px;
+    height:550px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+
+    z-index:10;
+}
+
+/* ==========================================
+   COSMIC GLOW
+========================================== */
+
+.cosmic-glow{
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(59,130,246,.12),
+            transparent 70%
+        );
+
+    filter:blur(80px);
+
+    z-index:-1;
+}
+
+/* ==========================================
+   GALAXY CORE
+========================================== */
+
+.galaxy-core{
+
+    position:absolute;
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            #ffffff 0%,
+            #60a5fa 40%,
+            #2563eb 100%
+        );
+
+    box-shadow:
+
+        0 0 40px rgba(255,255,255,.8),
+
+        0 0 80px rgba(96,165,250,.8),
+
+        0 0 180px rgba(96,165,250,.5);
+
+    animation:
+        galaxyPulse 5s ease-in-out infinite;
+}
+
+@keyframes galaxyPulse{
+
+    0%,100%{
+
+        transform:
+            scale(1);
+    }
+
+    50%{
+
+        transform:
+            scale(1.15);
+    }
+}
+
+/* ==========================================
+   ORBITS
+========================================== */
+
+.orbit{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.08);
+
+    left:50%;
+    top:50%;
+
+    transform:
+        translate(-50%,-50%);
+}
+
+.orbit-1{
+
+    width:180px;
+    height:180px;
+
+    animation:
+        orbitRotate 25s linear infinite;
+}
+
+.orbit-2{
+
+    width:280px;
+    height:280px;
+
+    animation:
+        orbitRotateReverse 40s linear infinite;
+}
+
+.orbit-3{
+
+    width:390px;
+    height:390px;
+
+    animation:
+        orbitRotate 60s linear infinite;
+}
+
+.orbit-4{
+
+    width:520px;
+    height:520px;
+
+    animation:
+        orbitRotateReverse 90s linear infinite;
+}
+
+@keyframes orbitRotate{
+
+    from{
+
+        transform:
+            translate(-50%,-50%)
+            rotate(0deg);
+    }
+
+    to{
+
+        transform:
+            translate(-50%,-50%)
+            rotate(360deg);
+    }
+}
+
+@keyframes orbitRotateReverse{
+
+    from{
+
+        transform:
+            translate(-50%,-50%)
+            rotate(360deg);
+    }
+
+    to{
+
+        transform:
+            translate(-50%,-50%)
+            rotate(0deg);
+    }
+}
+
+/* ==========================================
+   ORBIT PLANETS
+========================================== */
+
+.orbit::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-10px;
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    border-radius:50%;
+}
+
+.orbit-1::before{
+
+    width:18px;
+    height:18px;
+
+    background:#60a5fa;
+
+    box-shadow:
+        0 0 20px #60a5fa;
+}
+
+.orbit-2::before{
+
+    width:22px;
+    height:22px;
+
+    background:#8b5cf6;
+
+    box-shadow:
+        0 0 25px #8b5cf6;
+}
+
+.orbit-3::before{
+
+    width:28px;
+    height:28px;
+
+    background:#22d3ee;
+
+    box-shadow:
+        0 0 30px #22d3ee;
+}
+
+.orbit-4::before{
+
+    width:36px;
+    height:36px;
+
+    background:#f59e0b;
+
+    box-shadow:
+        0 0 35px #f59e0b;
+}
+
+/* ==========================================
+   FLOATING PLANETS
+========================================== */
+
+.floating-planet{
+
+    position:absolute;
+
+    border-radius:50%;
+}
+
+.floating-planet.one{
+
+    width:70px;
+    height:70px;
+
+    top:40px;
+    left:30px;
+
+    background:
+
+        radial-gradient(
+            circle at 30% 30%,
+            #ffffff,
+            #60a5fa
+        );
+
+    animation:
+        floatPlanet 10s ease-in-out infinite;
+}
+
+.floating-planet.two{
+
+    width:95px;
+    height:95px;
+
+    right:20px;
+    bottom:70px;
+
+    background:
+
+        radial-gradient(
+            circle at 30% 30%,
+            #ffffff,
+            #8b5cf6
+        );
+
+    animation:
+        floatPlanetReverse 14s ease-in-out infinite;
+}
+
+@keyframes floatPlanet{
+
+    0%,100%{
+
+        transform:
+            translateY(0);
+    }
+
+    50%{
+
+        transform:
+            translateY(-25px);
+    }
+}
+
+@keyframes floatPlanetReverse{
+
+    0%,100%{
+
+        transform:
+            translateY(0);
+    }
+
+    50%{
+
+        transform:
+            translateY(30px);
+    }
+}
+/* ==========================================
+   COMMON SECTION STYLES
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    font-size:
+        clamp(
+            2.5rem,
+            5vw,
+            4rem
+        );
+
+    margin-bottom:1.5rem;
+
+    font-weight:800;
+}
+
+.section-description{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+}
+
+/* ==========================================
+   MISSION SECTION
+========================================== */
+
+.mission-section{
+
+    position:relative;
+
+    padding:
+        8rem
+        8%;
+}
+
+.mission-content{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+.mission-card{
+
+    margin-top:4rem;
+
+    padding:
+        3rem;
+
+    border-radius:32px;
+
+    background:
+
+        rgba(
+            255,
+            255,
+            255,
+            .04
+        );
+
+    border:
+
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .08
+        );
+
+    backdrop-filter:
+        blur(20px);
+
+    transition:.4s ease;
+}
+
+.mission-card:hover{
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+
+        rgba(
+            96,
+            165,
+            250,
+            .35
+        );
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(
+            59,
+            130,
+            246,
+            .15
+        );
+}
+
+.mission-card p{
+
+    color:#cbd5e1;
+
+    line-height:2;
+
+    font-size:1.05rem;
+}
+
+/* ==========================================
+   STATS SECTION
+========================================== */
+
+.stats-section{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            auto-fit,
+            minmax(
+                240px,
+                1fr
+            )
+        );
+
+    gap:2rem;
+
+    padding:
+        2rem
+        8%
+        8rem;
+}
+
+/* ==========================================
+   STAT CARD
+========================================== */
+
+.stat-card{
+
+    position:relative;
+
+    text-align:center;
+
+    padding:
+        2.5rem;
+
+    border-radius:28px;
+
+    background:
+
+        rgba(
+            255,
+            255,
+            255,
+            .04
+        );
+
+    border:
+
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .08
+        );
+
+    backdrop-filter:
+        blur(20px);
+
+    overflow:hidden;
+
+    transition:.45s ease;
+}
+
+.stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(
+                59,
+                130,
+                246,
+                .12
+            ),
+            transparent
+        );
+
+    opacity:0;
+
+    transition:.4s ease;
+}
+
+.stat-card:hover{
+
+    transform:
+        translateY(-12px);
+
+    border-color:
+
+        rgba(
+            96,
+            165,
+            250,
+            .35
+        );
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(
+            59,
+            130,
+            246,
+            .15
+        );
+}
+
+.stat-card:hover::before{
+
+    opacity:1;
+}
+
+.stat-card h2{
+
+    font-size:3rem;
+
+    font-weight:900;
+
+    margin-bottom:1rem;
+
+    color:#60a5fa;
+}
+
+.stat-card p{
+
+    color:#cbd5e1;
+
+    font-size:1rem;
+
+    line-height:1.7;
+}
+
+/* ==========================================
+   STAT ICON
+========================================== */
+
+.stat-icon{
+
+    width:70px;
+    height:70px;
+
+    margin:
+        0 auto
+        1.5rem;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:1.8rem;
+
+    background:
+
+        rgba(
+            96,
+            165,
+            250,
+            .12
+        );
+
+    color:#60a5fa;
+
+    border:
+
+        1px solid
+        rgba(
+            96,
+            165,
+            250,
+            .2
+        );
+}
+/* ==========================================
+   FEATURES SECTION
+========================================== */
+
+.features-section{
+
+    position:relative;
+
+    padding:
+        8rem
+        8%;
+}
+
+.features-section .section-title{
+
+    margin-bottom:1rem;
+}
+
+.features-section .section-description{
+
+    margin-bottom:4rem;
+}
+
+/* ==========================================
+   FEATURES GRID
+========================================== */
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            auto-fit,
+            minmax(
+                320px,
+                1fr
+            )
+        );
+
+    gap:2rem;
+}
+
+/* ==========================================
+   FEATURE CARD
+========================================== */
+
+.feature-card{
+
+    position:relative;
+
+    padding:
+        2.5rem;
+
+    border-radius:30px;
+
+    background:
+
+        rgba(
+            255,
+            255,
+            255,
+            .04
+        );
+
+    border:
+
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .08
+        );
+
+    backdrop-filter:
+        blur(20px);
+
+    overflow:hidden;
+
+    transition:
+        .45s ease;
+}
+
+.feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(
+                59,
+                130,
+                246,
+                .12
+            ),
+            transparent
+        );
+
+    opacity:0;
+
+    transition:.4s ease;
+}
+
+.feature-card:hover{
+
+    transform:
+        translateY(-12px);
+
+    border-color:
+
+        rgba(
+            96,
+            165,
+            250,
+            .35
+        );
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(
+            59,
+            130,
+            246,
+            .15
+        );
+}
+
+.feature-card:hover::before{
+
+    opacity:1;
+}
+
+/* ==========================================
+   FEATURE ICON
+========================================== */
+
+.feature-icon{
+
+    width:80px;
+    height:80px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:1.5rem;
+
+    border-radius:24px;
+
+    font-size:2rem;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(
+                59,
+                130,
+                246,
+                .15
+            ),
+            rgba(
+                139,
+                92,
+                246,
+                .15
+            )
+        );
+
+    border:
+
+        1px solid
+        rgba(
+            96,
+            165,
+            250,
+            .2
+        );
+
+    color:#60a5fa;
+}
+
+/* ==========================================
+   FEATURE CONTENT
+========================================== */
+
+.feature-card h3{
+
+    font-size:1.5rem;
+
+    color:white;
+
+    margin-bottom:1rem;
+}
+
+.feature-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    margin-bottom:1.5rem;
+}
+
+/* ==========================================
+   FEATURE TAG
+========================================== */
+
+.feature-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:
+
+        .6rem
+        1rem;
+
+    border-radius:999px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    color:#60a5fa;
+
+    background:
+
+        rgba(
+            96,
+            165,
+            250,
+            .12
+        );
+
+    border:
+
+        1px solid
+        rgba(
+            96,
+            165,
+            250,
+            .18
+        );
+}
+
+/* ==========================================
+   FEATURE CARD GLOW
+========================================== */
+
+.feature-card:nth-child(1):hover{
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(
+            59,
+            130,
+            246,
+            .18
+        );
+}
+
+.feature-card:nth-child(2):hover{
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(
+            139,
+            92,
+            246,
+            .18
+        );
+}
+
+.feature-card:nth-child(3):hover{
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(
+            34,
+            211,
+            238,
+            .18
+        );
+}
+
+.feature-card:nth-child(4):hover{
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(
+            245,
+            158,
+            11,
+            .18
+        );
+}
+
+.feature-card:nth-child(5):hover{
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(
+            16,
+            185,
+            129,
+            .18
+        );
+}
+
+.feature-card:nth-child(6):hover{
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(
+            236,
+            72,
+            153,
+            .18
+        );
+}
+/* ==========================================
+   TECHNOLOGIES SECTION
+========================================== */
+
+.tech-section{
+
+    position:relative;
+
+    padding:
+        8rem
+        8%;
+}
+
+.tech-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:1.2rem;
+
+    margin-top:4rem;
+}
+
+.tech-grid span{
+
+    padding:
+        1rem
+        1.8rem;
+
+    border-radius:999px;
+
+    background:
+
+        rgba(
+            255,
+            255,
+            255,
+            .05
+        );
+
+    border:
+
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .08
+        );
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s ease;
+}
+
+.tech-grid span:hover{
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+
+        rgba(
+            96,
+            165,
+            250,
+            .35
+        );
+
+    color:#60a5fa;
+}
+
+/* ==========================================
+   CREATOR SECTION
+========================================== */
+
+.creator-section{
+
+    padding:
+        8rem
+        8%;
+}
+
+.creator-card{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:
+        4rem;
+
+    border-radius:32px;
+
+    background:
+
+        rgba(
+            255,
+            255,
+            255,
+            .04
+        );
+
+    border:
+
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .08
+        );
+
+    backdrop-filter:
+        blur(20px);
+}
+
+.creator-avatar{
+
+    width:120px;
+    height:120px;
+
+    margin:
+        0 auto
+        2rem;
+
+    border-radius:50%;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #60a5fa,
+            #8b5cf6
+        );
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:3rem;
+
+    color:white;
+}
+
+.creator-card h2{
+
+    margin-bottom:1rem;
+
+    color:white;
+}
+
+.creator-card h3{
+
+    color:#60a5fa;
+
+    margin-bottom:1.5rem;
+}
+
+.creator-card p{
+
+    color:#cbd5e1;
+
+    line-height:2;
+}
+
+/* ==========================================
+   ROADMAP SECTION
+========================================== */
+
+.roadmap-section{
+
+    padding:
+        8rem
+        8%;
+}
+
+.roadmap-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            auto-fit,
+            minmax(
+                250px,
+                1fr
+            )
+        );
+
+    gap:2rem;
+
+    margin-top:4rem;
+}
+
+.roadmap-card{
+
+    text-align:center;
+
+    padding:
+        2.5rem;
+
+    border-radius:24px;
+
+    background:
+
+        rgba(
+            255,
+            255,
+            255,
+            .04
+        );
+
+    border:
+
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .08
+        );
+
+    transition:.4s ease;
+}
+
+.roadmap-card:hover{
+
+    transform:
+        translateY(-10px);
+
+    border-color:
+
+        rgba(
+            96,
+            165,
+            250,
+            .35
+        );
+}
+
+.roadmap-card h3{
+
+    margin-bottom:1rem;
+
+    color:#60a5fa;
+}
+
+.roadmap-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+}
+
+/* ==========================================
+   CTA SECTION
+========================================== */
+
+.cta-section{
+
+    text-align:center;
+
+    padding:
+        8rem
+        8%;
+}
+
+.cta-section h2{
+
+    font-size:
+        clamp(
+            2.5rem,
+            5vw,
+            4rem
+        );
+
+    margin-bottom:1.5rem;
+}
+
+.cta-section p{
+
+    max-width:800px;
+
+    margin:
+        0 auto
+        2rem;
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    position:relative;
+
+    padding:
+        6rem
+        8%
+        4rem;
+
+    text-align:center;
+
+    border-top:
+
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .08
+        );
+}
+
+footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    width:500px;
+    height:2px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            #60a5fa,
+            #8b5cf6,
+            transparent
+        );
+}
+
+.footer-content h2{
+
+    font-size:3rem;
+
+    margin-bottom:1rem;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #60a5fa,
+            #8b5cf6
+        );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.footer-content p{
+
+    color:#94a3b8;
+
+    line-height:1.8;
+
+    margin-top:1rem;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .about-hero{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .hero-content{
+
+        max-width:100%;
+    }
+
+    .hero-visual{
+
+        width:420px;
+        height:420px;
+    }
+}
+
+@media(max-width:768px){
+
+    .hero-visual{
+
+        width:320px;
+        height:320px;
+    }
+
+    .orbit-4{
+
+        width:320px;
+        height:320px;
+    }
+
+    .orbit-3{
+
+        width:250px;
+        height:250px;
+    }
+
+    .orbit-2{
+
+        width:180px;
+        height:180px;
+    }
+
+    .orbit-1{
+
+        width:120px;
+        height:120px;
+    }
+
+    .creator-card{
+
+        padding:2.5rem;
+    }
+
+    .section-title{
+
+        font-size:2.5rem;
+    }
+}
+
+@media(max-width:576px){
+
+    .hero-visual{
+
+        width:260px;
+        height:260px;
+    }
+
+    .creator-avatar{
+
+        width:90px;
+        height:90px;
+
+        font-size:2rem;
+    }
+
+    .footer-content h2{
+
+        font-size:2.2rem;
+    }
+
+    .cta-section h2{
+
+        font-size:2rem;
+    }
+}

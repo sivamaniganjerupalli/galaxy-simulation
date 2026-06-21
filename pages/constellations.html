@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="GalaxyVerse Constellations Explorer - Discover ancient constellations, mythology, brightest stars and celestial navigation."
+    >
+
+    <title>
+
+        Constellations Explorer | GalaxyVerse
+
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/constellations.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            GalaxyVerse
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="galaxy.html">
+                Galaxies
+            </a>
+
+            <a href="solar-system.html">
+                Solar System
+            </a>
+
+            <a href="black-hole.html">
+                Black Holes
+            </a>
+
+            <a
+                href="constellations.html"
+                class="active"
+            >
+                Constellations
+            </a>
+
+            <a href="timeline.html">
+                Timeline
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+        <button
+            class="explore-btn"
+            onclick="window.scrollTo({
+                top:document.body.scrollHeight,
+                behavior:'smooth'
+            })"
+        >
+
+            Launch Mission
+
+        </button>
+
+    </nav>
+
+    <!-- ==========================================
+         HERO
+    =========================================== -->
+
+    <section class="constellation-hero">
+        <div id="constellation-starfield"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+
+                ✨ International Astronomical Observatory
+
+            </div>
+
+            <h1>
+
+                Explore The
+
+                <span class="gradient-text">
+
+                    Night Sky
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                Discover the ancient constellations
+                that guided civilizations for thousands
+                of years. Explore mythology,
+                brightest stars, celestial coordinates,
+                and the stories written across the sky.
+
+            </p>
+
+            <a
+                href="#constellationContainer"
+                class="hero-btn"
+            >
+
+                Start Exploring
+
+            </a>
+
+        </div>
+
+        <div class="constellation-animation">
+
+            <!-- NASA STARFIELD -->
+
+            <div id="starfield"></div>
+
+            <!-- NEBULA -->
+
+            <div class="nebula nebula-1"></div>
+            <div class="nebula nebula-2"></div>
+
+            <!-- MILKY WAY -->
+
+            <div class="milkyway-band"></div>
+
+            <!-- SPACE GLOW -->
+
+            <div class="space-haze"></div>
+
+            <!-- CELESTIAL RING -->
+
+            <div class="zodiac-ring"></div>
+
+            <!-- MOON BLOOM -->
+
+            <div class="moon-glow"></div>
+
+            <!-- CYGNUS CONSTELLATION -->
+
+            <svg
+                class="hero-constellation"
+                viewBox="0 0 1000 1000"
+                preserveAspectRatio="xMidYMid meet"
+            >
+                            <!-- LEFT WING -->
+
+                <circle class="star-md" cx="180" cy="520" r="10"></circle>
+                <circle class="star-md" cx="300" cy="520" r="10"></circle>
+                <circle class="star-lg" cx="420" cy="470" r="12"></circle>
+
+                <!-- UPPER CENTER -->
+
+                <circle class="star-lg" cx="440" cy="270" r="12"></circle>
+
+                <!-- SADR -->
+
+                <circle class="star-xl" cx="500" cy="400" r="18"></circle>
+
+                <!-- NECK -->
+
+                <circle class="star-lg" cx="620" cy="350" r="12"></circle>
+                <circle class="star-md" cx="720" cy="220" r="10"></circle>
+
+                <!-- HEAD -->
+
+                <circle class="star-sm" cx="780" cy="170" r="8"></circle>
+
+                <!-- BODY -->
+
+                <circle class="star-lg" cx="560" cy="560" r="12"></circle>
+
+                <!-- TAIL -->
+
+                <circle class="star-xl" cx="680" cy="700" r="16"></circle>
+
+                <!-- CONNECTIONS -->
+
+                <line x1="180" y1="520" x2="300" y2="520"></line>
+                <line x1="300" y1="520" x2="420" y2="470"></line>
+
+                <line x1="420" y1="470" x2="500" y2="400"></line>
+                <line x1="440" y1="270" x2="500" y2="400"></line>
+
+                <line x1="500" y1="400" x2="620" y2="350"></line>
+                <line x1="620" y1="350" x2="720" y2="220"></line>
+                <line x1="720" y1="220" x2="780" y2="170"></line>
+
+                <line x1="500" y1="400" x2="560" y2="560"></line>
+                <line x1="560" y1="560" x2="680" y2="700"></line>
+
+            </svg>
+
+            <!-- FOREGROUND STARS -->
+
+            <div class="particle p1"></div>
+            <div class="particle p2"></div>
+            <div class="particle p3"></div>
+            <div class="particle p4"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         SKY FACTS
+    =========================================== -->
+
+    <section class="sky-facts">
+
+        <div class="fact-card">
+
+            <h2>88</h2>
+
+            <p>
+
+                Official Constellations
+                Recognized By The IAU
+
+            </p>
+
+        </div>
+
+        <div class="fact-card">
+
+            <h2>48</h2>
+
+            <p>
+
+                Ancient Greek
+                Constellations
+
+            </p>
+
+        </div>
+
+        <div class="fact-card">
+
+            <h2>IAU</h2>
+
+            <p>
+
+                International Astronomical
+                Union Classification
+
+            </p>
+
+        </div>
+
+        <div class="fact-card">
+
+            <h2>360°</h2>
+
+            <p>
+
+                Complete Celestial
+                Sphere Coverage
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         SEARCH
+    =========================================== -->
+
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="constellationSearch"
+            placeholder="Search constellations, stars, seasons..."
+        >
+
+    </section>
+
+    <!-- ==========================================
+         CONSTELLATION GRID
+    =========================================== -->
+
+    <section
+        id="constellationContainer"
+        class="constellation-grid"
+    >
+
+        <!-- NASA JS GENERATED CARDS -->
+
+    </section>
+        <!-- ==========================================
+         MYTHOLOGY & LEGENDS
+    =========================================== -->
+
+    <section class="mythology-section">
+
+        <h2 class="section-title">
+
+            Mythology & Legends
+
+        </h2>
+
+        <p class="section-subtitle">
+
+            Long before modern astronomy,
+            civilizations connected stars into
+            legendary figures, mythical creatures,
+            heroes and celestial guardians.
+
+        </p>
+
+        <div class="mythology-grid">
+
+            <div class="myth-card">
+
+                <div class="legend-tag">
+
+                    Greek Mythology
+
+                </div>
+
+                <h3>
+
+                    Orion
+
+                </h3>
+
+                <p>
+
+                    Orion was a mighty hunter in
+                    Greek mythology and remains one
+                    of the most recognizable constellations
+                    visible from Earth.
+
+                </p>
+
+            </div>
+
+            <div class="myth-card">
+
+                <div class="legend-tag">
+
+                    Celestial Bear
+
+                </div>
+
+                <h3>
+
+                    Ursa Major
+
+                </h3>
+
+                <p>
+
+                    Represents the Great Bear and
+                    contains the famous Big Dipper
+                    asterism used for navigation
+                    throughout history.
+
+                </p>
+
+            </div>
+
+            <div class="myth-card">
+
+                <div class="legend-tag">
+
+                    Royal Constellation
+
+                </div>
+
+                <h3>
+
+                    Cassiopeia
+
+                </h3>
+
+                <p>
+
+                    A queen in Greek mythology,
+                    famous for its distinctive
+                    W-shaped pattern visible
+                    throughout much of the year.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- EDUCATIONAL PANEL -->
+
+        <div class="constellation-info-panel">
+
+            <h2>
+
+                Understanding Constellations
+
+            </h2>
+
+            <p>
+
+                Constellations are officially defined
+                regions of the sky rather than simply
+                groups of stars. Modern astronomers
+                divide the celestial sphere into
+                88 recognized constellations, helping
+                observers locate stars, galaxies,
+                nebulae and other deep-space objects.
+
+            </p>
+
+            <div class="fact-strip">
+
+                <div class="fact-item">
+
+                    <h4>
+
+                        88 Regions
+
+                    </h4>
+
+                    <p>
+
+                        The sky is divided into
+                        88 official constellation
+                        boundaries.
+
+                    </p>
+
+                </div>
+
+                <div class="fact-item">
+
+                    <h4>
+
+                        Navigation
+
+                    </h4>
+
+                    <p>
+
+                        Ancient sailors used
+                        constellations to navigate
+                        across oceans.
+
+                    </p>
+
+                </div>
+
+                <div class="fact-item">
+
+                    <h4>
+
+                        Deep Space
+
+                    </h4>
+
+                    <p>
+
+                        Many galaxies and nebulae
+                        are identified by the
+                        constellation they appear in.
+
+                    </p>
+
+                </div>
+
+                <div class="fact-item">
+
+                    <h4>
+
+                        Seasonal Sky
+
+                    </h4>
+
+                    <p>
+
+                        Different constellations
+                        become visible throughout
+                        the year.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ==========================================
+         MODAL
+    =========================================== -->
+
+    <div
+        class="modal"
+        id="constellationModal"
+    >
+
+        <div class="modal-content">
+
+            <span
+                id="closeConstellationModal"
+            >
+
+                &times;
+
+            </span>
+
+            <div
+                id="constellationModalBody"
+            >
+
+                <!-- JS GENERATED -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+
+                GalaxyVerse
+
+            </h2>
+
+            <p>
+
+                Explore galaxies, stars,
+                planets, black holes,
+                constellations and the
+                wonders of the observable
+                universe through immersive
+                interactive experiences.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================================
+         SCRIPTS
+    =========================================== -->
+
+    <script src="../js/constellations.js"></script>
+
+</body>
+
+</html>
